@@ -1,0 +1,71 @@
+Problem Set 2
+## Started 5/14/2020
+Problem 1
+a) explain how to write a formula Members(p,a,b) that means p = {a,b}
+p = a OR b
+this is a short hand for for all z is and elment of (p and a) or (p and b)
+b) eplain how to write a the formula Pair(p,a,b of set theory that means p= pair(a,b)
+pair(a,b) is equivalent to {a,{a,b}} so if we use our member notiation we get
+Members(p,a,Members(p,a,b))
+
+Members(p," ",Members(p," ",b))
+
+
+Problem 2
+Not(A⋂B) = Not A ⋃ Not B
+
+Not (P and Q) is equivalent to Not(P) OR Not(Q)
+
+iff x ∈ Not(P) or Not(Q)
+iff x ∈ Not (P And Q)
+so Not P And Q is equivalent to Not P or nott Q
+
+Problem 3
+a)show that if R and S are c-d then so is R⋂S
+b)
+our zero count sets are
+{0},{1},Ø
+Our 1 count sets
+ Øc , that is complement of empty set
+ our 2 count sets
+ are 0B1
+
+ c)
+ starting with {Ø}, {1}
+ complement of empty set gives B
+ B cat {1} is all language with atleast one 1
+ Cat of that gives 0* so 0* is c-d
+
+
+ d)
+ Start with {Ø}, {1}, {0}, {00}, {11}
+ {Ø}c = B
+ ({00}B{11} ⋃ {0} ⋃ {1} )c
+ gives out answer of
+ {01}*
+
+
+ e)
+ {00}* is not boring because
+ there are an infinte set of even 0s words and infinte set of odd 0 in the
+ complement
+
+ f)
+ verify by cases
+case 1.
+ suppose Rn0* is finite and Sn0* is infinite
+ then we know,
+ Rc n0* is infinite and Sc n0* is finite
+
+ We would like to show that (RuS)n0* is finite or (RuS)c n0* is finite
+ concider (RuS)c
+by demorgan's law we have (Rc n Sc) this is contained in Sc
+and Sc n0* is finite
+
+case 2.
+in the opposite case we have Rn0* is inf. and Sn0* is finite
+
+
+g)
+
+ h)

@@ -1,0 +1,86 @@
+Problem 1
+----------
+Prove that Log4(6) is irrational
+
+pf. by contradiction
+if Log4(6) is rational than we can express it as n/d where they are elements of positive integers
+then by manipulation,
+log(6) / log(4) = n / d
+6^d = 4^n
+(2*3)^d = 2^2n
+this prime factorization shows that there is no such value of n and d
+thus log4(6) is not rational
+QED
+----------
+
+
+Problem 2
+----------
+Use the Well Ordering Principle to prove that
+
+n <= 3 ^ (n/3), for every nonnegative integer,n
+
+pf. by well Ordering,
+assume there is a least k
+
+formula by manipulation,
+
+k ^ 3 <= 3 ^ k
+
+by direct computation we see k>4
+
+k ^ 3
+
+----------
+
+
+Problem 3
+----------
+a)
+problem: Verify by truth table that (P implies Q) OR (Q implies P) is valid
+
+valid formula is always true regardless of truth value input
+
+P Q  --  (P implies Q) OR (Q implies P)
+T T       T    T    T   T  T    T    T
+T F       T    F    F   T  F    T    T
+F T       F    T    T   T  T    F    F
+F F       F    T    F   T  F    T    F
+
+table is true for all values; formula is valid
+--
+b)
+Let P and Q be propositional formulas. Describe a single formula, R, using only AND’s, OR’s, NOT’s, and copies of P and Q, such that R is valid iff P and Q are equivalent
+
+R : (P AND Q) OR NOT(P OR Q)
+R is valid iff P and Q are equivalent
+--
+c)
+A  propositional  formula  is satisfiable iff  there  is  an  assignment  of  truth  values  to  its  variables—an environment—which makes it true. Explain why
+
+P is valid    iff NOT(P) is not satisfiable.
+
+if Not(P) is not satifiable that means all inputs to P make P True to in return make Not(P) not satisfiable
+there for P will be valid because all inputs to P will make it True
+--
+d)
+A set of propositional formulas P1,...,Pk is consistent iff there is an enviornment in which they are all true. write a formula, S, so that the set P1,...,pk is not consistent iff S is valid.
+
+S = NOT(P1 OR P2 OR P3 ... OR Pk)
+--
+
+Problem 4.
+
+a) P_0 := Not(a_0) , c:= a_0
+--
+b) o_i = Not(p_i xor b)
+
+--
+c) C := c_1 + c_2
+--
+d) P_i = Not ( r_i-(n+1) Xor C_1)
+--
+e)
+ripple is going to be some linear time something like 5n +c
+parrallel adder is going to be log2(n)
+--
