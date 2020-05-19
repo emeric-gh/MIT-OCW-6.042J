@@ -1,6 +1,6 @@
 Problem Set 2
 ## Started 5/14/2020
-Problem 1
+Problem 1.
 a) explain how to write a formula Members(p,a,b) that means p = {a,b}
 p = a OR b
 this is a short hand for for all z is and elment of (p and a) or (p and b)
@@ -11,7 +11,7 @@ Members(p,a,Members(p,a,b))
 Members(p," ",Members(p," ",b))
 
 
-Problem 2
+Problem 2.
 Not(A⋂B) = Not A ⋃ Not B
 
 Not (P and Q) is equivalent to Not(P) OR Not(Q)
@@ -83,10 +83,24 @@ case 1.
 if you concatinate two sets that have finite intersections with 0*
 they will form finite intersections with 0*, product of finites are finite
 the only thing that can appear in the RS n 0* are the elements without a 1.
+Case 2.
+Rn0* and Sc n0* are finite
+if RSn0* are finite then it is boring
+else RSn0* is infinite
+R must contain some 0-string of say length L
+S must have some least length 0-string of length N
+from this RS would contain all 0-strings of L+N or greater
+and its complment (RS)c would only have 0-strings less than L+N which there would be
+a finite quantity
+
+if Rc and Sc intersect with 0* are both finite then R and S both contain all 0 strings with some min length M
+and (RS)c must contain only 0 strings of length less than the Sum of both M, which is finites
+this completes the proof
 
 
 
-h)By what we have verified with h) and g) that if you start with a 0-count set which is boring,
+h)
+By what we have verified with h) and g) that if you start with a 0-count set which is boring,
 then union some of these togeather or concatinate some of these togeather they will still be boring after each step
 further while taking the complement can make infinite intersection with 0* by definition the set is still boring becasue the complment of the complment
 is the origninal set, which is 0-finite
