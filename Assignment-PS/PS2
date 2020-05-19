@@ -51,28 +51,42 @@ Our 1 count sets
  complement
 
  f)
- verify by cases
-case 1.
- suppose Rn0* is finite and Sn0* is infinite
- then we know,
- Rc n0* is infinite and Sc n0* is finite
+ case 1.
+  suppose Rn0* is finite and Sn0* is infinite
+  then we know,
+  Rc n0* is infinite and Sc n0* is finite
 
- We would like to show that (RuS)n0* is finite or (RuS)c n0* is finite
+  We would like to show that (RuS)n0* is finite or (RuS)c n0* is finite
  concider (RuS)c
-by demorgan's law we have (Rc n Sc) this is contained in Sc
-and Sc n0* is finite
+ by demorgan's law we have (Rc n Sc) this is contained in Sc
+ and Sc n0* is finite
 
-case 2.
-in the opposite case we have Rn0* is inf. and Sn0* is finite
+ case 2.
+ in the opposite case we have Rn0* is inf. and Sn0* is finite
+ concider again (RuS)c is (Rc n Sc) which is contained in Rc
+ and Rc n0* is finite
+
+ case 3.
+ suppose Rn0* is finite and Sn0* is finite
+ (RuS)n0* the union of a finite and a finite will still be finite with 0*
+
+ case 4.
+ suppose Rn0* is inf. and Sn0* is inf.
+ (Rc n Sc) is going to be finite so (Rc n Sc)n0* is finite as well
+
+ we have shown for all cases that if R and S are boring then so is R u S
 
 
 g)
 verify by cases
 case 1.
-Rn0* is finite, Sn0* is finite
-(R dot S) n 0* is finite, because youre just going to have product of infinite
+if you concatinate two sets that have finite intersections with 0*
+they will form finite intersections with 0*, product of finites are finite
+the only thing that can appear in the RS n 0* are the elements without a 1.
 
-Rn0* is finite, Sn0* is infinite
-  
 
- h)
+
+h)By what we have verified with h) and g) that if you start with a 0-count set which is boring,
+then union some of these togeather or concatinate some of these togeather they will still be boring after each step
+further while taking the complement can make infinite intersection with 0* by definition the set is still boring becasue the complment of the complment
+is the origninal set, which is 0-finite

@@ -1,0 +1,46 @@
+Started 5/19/2020
+
+Problem 1.
+b Rinv. a iff a R b.
+
+R is        | iff R-1 is
+----------------------
+total       | a surjection
+a function  | an injection
+a surjection| total
+an injection| a function
+a bijection | a bijection
+
+
+Problem2.
+A is size n, B is size m,
+Prove that |A x B| = mn by defining a simple bijection from A x B
+to non negative integers from 0 to mn -1
+
+
+Problem 3.
+Assume f: A -> B is total function and A is finite. create the strongest
+correct Statemenst
+a) |f(A)| |B|
+b) If f is a surjection, then |A| |B|
+c) If f is a surjection, then |f(A)| |B|
+d) If f is an injection, then |f(A)| |A|
+e) If f is a bijeciton, then |A| |B|
+
+Problem 4.
+Let R: A->B be a binary relation. Use an arrow counting argument to prove the
+following generatlization of the Mapping Rule 1. from the textbook.
+Lemma. If R is a function and X ⊆ A, then
+|X| >= |R(X)|
+
+
+
+Problem 5.
+(a) Prove that if A surj B and B surj C then A surj C
+
+(b) explain why A surj B iff B inj A
+
+(c) conclude from (a) and (b) that if A inj B and B inj C then A inj C
+
+(d) explain why A inj B iff there is a total injective function ([=1 out, <= 1in])
+from A to B
