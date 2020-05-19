@@ -1,0 +1,48 @@
+Started on 5/13/2020
+
+Problem 1.
+a) (P and NotQ) Or (P And Q) is equivalent to P
+this should be equal to
+P and (Not Q or Q), which is P and True
+P and True is P
+
+⋃ union ⋂ intersection
+b) Prove that A = (A-B) ⋃ (A ⋂ B)
+iff x ∈ (A-B) U (A ⋂ B)
+iff x ∈ (A-B) iff x ∈ (A And NotB)
+iff x ∈ (A ⋂ B) iff x ∈ (A And B))
+iff x ∈ (A And NotB) ⋃ (A And B) iff x ∈ (A and NotB) Or (A and B)
+which takes the form of part a, therfore x ∈ A
+
+Problem 2
+a) x = Ø
+x = Ø ; ∀z.(z ∈ x IFF z ∈ Ø)
+
+b) x = {y,z}
+(y ∈ x and z ∈ x) and ∀d.((d != y and d!=z) and d ∉ x)
+
+c) x⊆y
+∃z.(z ∈ x IFF z ∈ y)
+
+d) x= y ⋃ z
+∀a.(a ∈ x IFF a ∈ y Or a ∈ z)
+
+e)x = y - z
+∀a.(a ∈ x IFF a ∈ y AND a ∉ z)
+
+f) x = Pow(y)
+∀a. a ∈ x IFF a ⊆ y
+
+g)
+
+Problem 3.
+(a,b) {a,b}
+these are not equivalent because for example
+{a,b} is equivalent to {b,a} but
+{b,a} is not equivalent to (a,b)
+
+
+Problem 4.
+
+Player 1 choice is some B ⊂ A
+Player 2 is C | A = C ⋃ B and Not ∃z. (z ∈ C and z ∈ B)

@@ -1,0 +1,50 @@
+Problem 1
+---------------------------------------------------
+∃ ∀
+
+Where C is complex numbers, R is real numbers, Q is rationals, Z, is ints,
+Non negative
+
+∃x. x^2 = 2
+True for C, R
+
+∀x.∃y x^2 =y
+True for N,Z,Q,R,C
+
+∀y.∃x x^2 = y
+True for C
+
+∀x != 0.∃y xy =1
+True for C,R,Q
+
+∃x.∃y x + 2y = 2 AND 2x + 4y = 5
+no solutions exist, these are both parrallel lines
+
+Problem 2
+----------------------------------------------------
+
+a) x consists of three copies of some string
+∃z. (zzz = x)
+
+b) x is an even-length string of 0's
+∃z. Not(substring(1,z)) (zz = x)
+
+c) x does not contain both a 0 and 1
+Not(substring(1,x)) or Not(substring(0,x))
+
+d) x is binary representation of 2^k + 1 for some integer k>=0
+∃x. NO-1s(x), y= 1x1 Or y= 10
+
+e) an elegent, slightly trickier way tro define NO-1s(x) is Prefix (x, 0x)
+explain why the above is true only when x is a string of 0's
+our formula becomes ∃z ( xz = 0x)
+so x has a leading 0 but similarly once we say x_1 = 0 then we have to say x_i+1 is also 0
+
+Problem 3
+-----------------------------------------------------
+∃s  (∃a,b E(s,a) and E(s,b) and s!=a and s!=b and a!=b and (for all z, z!=s and z!= a and z!=b, !E(s,z))
+
+Problem 4
+-----------------------------------------------------
+1 is Not valid, counter example would be x>y where x and y are ints, which leads to T implies F
+if ∀x∃y is F then  ∃y∀x is also false, so 2 will either be FF or TT or FT all of which are valid for the implies true table
