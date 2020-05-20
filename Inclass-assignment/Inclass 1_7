@@ -21,7 +21,7 @@ to non negative integers from 0 to mn -1
 Problem 3.
 Assume f: A -> B is total function and A is finite. create the strongest
 correct Statemenst
-a) |f(A)| |B|
+a) |f(A)| = |B|
 b) If f is a surjection, then |A| |B|
 c) If f is a surjection, then |f(A)| |B|
 d) If f is an injection, then |f(A)| |A|
