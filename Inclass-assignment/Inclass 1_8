@@ -1,0 +1,49 @@
+Inclass Assignment 1.8
+Started 5/21/2020
+
+Problem 1.
+Proof by induction
+1 + 1/4 + 1/9 + ... 1/n^2 < 2- 1/n ; for all n>1
+by computation n=2 is true
+P(k) implies P(k+1) for all k >2
+assume
+1 + 1/4 + 1/9 + ... 1/k^2  < 2- 1/k
+and we would like to show,
+1 + 1/4 + 1/9 + ... 1/k^2 + 1/(k+1)^2 < 2- 1/(k+1)
+using our assumption
+2-1/k + 1/(k+1)^2 < 2- 1/(k+1)
+which becomes
+1/(k+1)^2 - 1/k < -1/(k+1) then
+-k^2 - k -1 / (k(K+1)^2) < -k^2 -k / (k(K+1)^2)
+which clearly shows that P(k+1) is True, completing the proof
+
+Problem 2.
+a)
+we can show that the n= 0 case bill is just in the middle
+in the n+1 case if we assume that n is possible
+than we take our n blocks with bill in teh corner, we rotate 3 them inward by pi radians and
+we retile the 3 bills we no longer need and keep the last bill. thus showing the n+1 case.
+b)if we accept (a) then we can take our n+1 case, in our base case we have
+if we can use and an n-1 case we can take a middle bill and rotate him to an outward corner bill
+when we make our n+1 size square we can take our 4 outward corner bills and rotate them inward to make 4 central bills and
+tile over 3 of them,
+
+Problem 3.
+Proof by induction
+S(n) = n + 12 cent postage can be made using only 3 + 7 moni stamps
+S(0) = 12, which can be 3+3+3+3
+assume S(k) = k + 12 is true
+Case 1
+when we have at least two threes, we remove two 3s and add one 7
+this nets us 1 and proves the k+1
+Case 2
+when we have one 3, then we must have at least two sevens because 12 is the min.
+in this case we would remove two sevens and add five 3s, netting 1 and proves k+1
+Case 3
+we have no 3s, similar to case 2 we have atleast two sevens and do the same procedure as case 2
+
+this completes all cases and thus the proof.
+
+Problem 4
+This proof is bogus because the base case doesnt help confirm the n+1 case
+in the base case n=1 there is no P, so we cant assume there is one in the specified n+1 cases
