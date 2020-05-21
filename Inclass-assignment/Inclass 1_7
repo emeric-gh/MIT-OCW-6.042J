@@ -17,30 +17,55 @@ A is size n, B is size m,
 Prove that |A x B| = mn by defining a simple bijection from A x B
 to non negative integers from 0 to mn -1
 
+{a0b0, a0b1,...     a0b-1,... an-1bm-1}
+{0   ,    1,...      m-1,...  mn-1}
 
 Problem 3.
 Assume f: A -> B is total function and A is finite. create the strongest
-correct Statemenst
-a) |f(A)| = |B|
-b) If f is a surjection, then |A| |B|
-c) If f is a surjection, then |f(A)| |B|
-d) If f is an injection, then |f(A)| |A|
-e) If f is a bijeciton, then |A| |B|
+correct Statement
+a) |f(A)| <= |B|, less than or equal
+b) If f is a surjection, then |A| >= |B|, greater or equal if f is a surj.
+c) If f is a surjection, then |f(A)| = |B|, is equal if f is surjection
+d) If f is an injection, then |f(A)| = |A|, is equal if f is injective
+e) If f is a bijection, then |A| = |B|, is equal if f is bijection
 
 Problem 4.
 Let R: A->B be a binary relation. Use an arrow counting argument to prove the
-following generatlization of the Mapping Rule 1. from the textbook.
+following generalization of the Mapping Rule 1. from the textbook.
 Lemma. If R is a function and X ⊆ A, then
 |X| >= |R(X)|
 
-
+since X is a subset of A, then the map R(X) is still a function, R(X) will have <= 1 arrow out of each element in X.
+Thus |X| will be >= to the # of arrows
+ |R(x)| will be less than or equal to the number of arrows
+ therfore |X| >= # arrows >= |R(X)|, and |X| >= |R(X)|
 
 Problem 5.
 (a) Prove that if A surj B and B surj C then A surj C
+if A surj B, then |A| > |B|, and if B surj C then |B|>|C|
+then |A| > |B| > |C| then |A|> |B| and we can map form A to C
 
 (b) explain why A surj B iff B inj A
+if A surj B then, # arrows >= |B|,
+this implies that |A| >= # arrows
+
+if B inj A then, there are <= 1 arrow in to A so
+A >= # arrows
+this implies that # arrows >= |B|
+one implies the other there fore
+A surj B iff B inj A, and
+|A| >= # arrows >= |B|
+
 
 (c) conclude from (a) and (b) that if A inj B and B inj C then A inj C
+if we take (a) and (b) to be true then the map that goes from A -> B -> C
+could be inversed as injection C->B->A this would also be inj. A->C from (a)
+we could rename this to be A inj C, like the Statement
 
 (d) explain why A inj B iff there is a total injective function ([=1 out, <= 1in])
 from A to B
+by definition A inj B, iff |A|<= |B|
+so we would like to show that there is a total inj function f: A ->B
+if we make our f map from every A 1 arrow, then it will be a total injuctive function because |A|<=|B|
+if the A inj B was false and we had some different relationship between |A| and |B| and we tried to map from A -> B
+with 1 arrow from A, then relation ship with B would also not hold.
