@@ -1,5 +1,6 @@
 Problem Set 3
 
+
 Problem 1.
 prove using strong induction, the following closed-form fomula for Fn
 Fn =( P^n - Q^n ) / rad(5)
@@ -54,11 +55,6 @@ so S(n+1) = 0 + P(A)n - P(B)n + our score for 1 move
 
 
 Problem 3.
-f is function, g is function,
-if h is surjective then
-|C| < = #arrows in H,
-|A| >= arrows in G,
-|B| >= arrows in F
 
 (a) If h is surjective, then f must be surjective.
 suppose f o g is surjective, let z ∈ C, and x ∈ A such that f(g(x))=z
