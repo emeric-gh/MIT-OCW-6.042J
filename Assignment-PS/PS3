@@ -20,34 +20,41 @@ F(n) =( p^n -q^n ) / rad(5), for n>=3 thus completes the Proof
 
 Problem 2.
 Any sequence of moves that can take a game state from A to state B
-can be done so is a series of moves that we will represent as
-taking a stack of size a+b and creating an a size and a b size
-the A of our one move example will be P(A) = P(sigma_i) + P(a+b) where sigma is all unchanged stacks
-P(B) = P(sigma_i) + P(a) + P(b)
-if we use the score potential P(S) = k(k-1)/2 then
-P(A) is (a+b)(a+b-1)/2 + P(sigma_i), which we can rearange to
-(a^2 -a + b^2 -b + 2ab ) 1/2 + P(sigma_i)
-similarly P(B) is
-(a^2 - a + b^2 -b)/2 + P(sigma_i)
-we can see that P(A)> P(B)
-P(A)-P(B) = ab
-all steps from 1 game state to another game state will but the sum of move like this
-that is the sum of positive number will be positive
+
+suppose we have a function S(n) that gives the score of a number of moves n.
+if we start with a set A_0 and take one move to A_1 where A_1 is also equal to B
+our change in score of
+P(A) is P(unchanged stacks) + P(changed stack)
+our changed stack will be a stack of a + b height that will be split into a and b size
+so our
+P(A_0) = P(unchanged stacks) + P(a+b)
+P(A_1) = P(unchanged stacks) + P(a)+ P(b)
+which makes our
+S(1) = P(A_0) - P(A_1) = P(a+b) - (P(a)+ P(b))
+our P(unchanged stacks) will cancel so we will disregard them from now on
+if we substitute the potential formula P(S) = k(k-1)/2
+we get
+P(A_0) = (a+b)(a+b-1)/2  = (a^2 -a + b^2 -b + 2ab ) 1/2
+P(A_1)  = (a^2 - a + b^2 -b)1/2
+
+so S(1) = ab
+this is our base case
+for our induction step
+we have that S(n) = S(0) + S(1) + ... + S(n-1)
+which is = P(A_0) - P(A_1) + P(A_1) - P(A_2) + ... + P(A_n-2) - P(A_n-1)
+assume this to be True
+for S(n+1) we see that if the first state A_0 is simply called A and A_n term is called B
+then we get S(n+1) = P(A_0) - P(A_1) + P(A_1) - P(A_2) + ... + P(A_n-2) - P(A_n-1) + P(A_n-1) - P(A_n)
+everything except the beginnning and end cancel in a telescoping series
 therefore
-P(A) >= P(B) where A can be turned into B by a number of moves
+ S(n+1) = P(A_0) - P(A_n) = P(A) - P(B)
+ thus completing the Proof that the score is P(A) - P(B)
+each individual move has been shown to be equivalent to ab, this will always be positive
+and the sum of positive score changes will be positive, unless there is no move change from P(A) to P(B)
+in which case P(A)=P(B) and the score is 0.
+therefore P(A)>=P(B)
+thus completing the other proof.
 
-suppose S(n) is our score function for number of moves n
-S(0) = P(A) - P(B)
-were P(B) = P(A)
-S(0) is 0 which is valid
-
-S(n) = P(unchanged) + P(changed blocks in n moves)
-assume that,
-unchanged is 0 , so S(n) = P(A)- P(B) = P(changed blocks in n moves)
-
-S(n+1) = P(unchanged) + P(changed blocks in n moves) + P(a+b) - P(a) + P(b)
-weve shown that P(a+b) - P(a) + P(b) is ab
-so S(n+1) = 0 + P(A)n - P(B)n + our score for 1 move
 
 
 
