@@ -1,1 +1,94 @@
 Inclass Problems 9
+Problem 1
+(a)
+P((r,s,a)) == [rs + a = xy]
+
+so we want to show that P is a preserved invariant of R
+
+for even we would like to show that P((r_t,s_t,a_t)) holds
+hold for
+r_t*s_t + a_t = 2r*s/2 + a
+= rs + a
+= xy
+holds for even
+
+for odds
+2r(s-1)/2 + (a+r)
+sr-r + a + r
+sr + a = xy
+holds for odds
+
+(b)
+based on what we showed for (a) rs+a = xy,
+the machine will stop for even or odd when s=0
+so a= xy
+
+(c) number of transition is a count down of S, s is at least halved every transition
+this will take log steps
+binary representation of a number is also known to be long length of the number
+so the transition count will be the same number as the length of the binary representation
+
+Problem 2
+(a)
+ list representation of start 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15 (4,4)
+ list representation of impossible 15,14,13,12,11,10,9,8,7,6,5,4,3,2,1 (4,4)
+
+(b)
+ our start state has zero out of order, and is row 4 so its parity is 0
+ our impossible state has n(n+1)/2 out of order where n is 14, so its out of order pairs is 105 plus row 4
+ so its parity is 1
+ thus parity is different
+ (c)
+ in the case that the gap moves a column,
+ we will get a preserved order
+ .... n_i, gap, n_i+1, n_i+2 , anywhere we transition the gap to is like ignoring the gap
+when it comes to the order because we are just swapping thing with the gap no with eachother
+
+in the case that the gap moves by row, the effect is the number either moves up the list by 3 or down the list by 3. each number that the moved tile
+jumps ahead of or behind can either remove a pair or add a pair to our out-of-order list.
+so the number of out of order pairs change will always be odd, our row change i will also be odd, because its a row change of 1, our sum of odd changes is even.
+so our change in P(L) + i is even, so if it started odd it stays odd if it started even it stays even.
+therefor parity never changes
+
+Problem 3
+ Transition 1 when
+ let car on {A+3, B, C+1}; A-B <T_0 and C<=1000
+ Transition 2
+ let car off {A, B+2,C-1}; 0<C<= 1000
+
+ b)
+A               WI
+B               WI
+A+B             SI
+A-B              N
+3C - A          WD
+2A-3B           N
+B + 3C          N
+2A - 3B -6C     C
+2A - 2B -3C     N
+
+c)
+let D_0 = 2A_0 - 3B_0 - 6C_0
+Preserved invariant P(A,B,C) ::== [2A-3B-6C = D_0] and [C<=1000]
+
+We can show that this is true by
+c'=C+1, A'=A+3, B'=b
+inserted into our P()(A',B',C')) we still get
+[2A'-3B'-6C' = D_0]
+also A-B <T_0
+A - B < T_0
+A <= T_0 + B-1
+inserted into our invariant we have
+note A' = A + 3, B' = B =B_0
+2(T_0 + B - 1 + 3) - 3B - 6C' = D_0
+2(3(1000-C_0) +(A_0-B_0)) + B + 2) - 3B' - 6C' = D_0
+6000-6C_0 + 2A_0- 2B_0 +2B_0 +4 - 3B_0 - 6C' = D_0
+remove the invariant 2A_0-3B_0-6C_0 = D_0
+6C'= 6004/6 = C'= 1000 as required also C' < C <= 1000
+
+d)
+with each car over the bridge A-B increase by 1
+after 3000 cars go over the bridge cars can not enter the bridge
+A-B >= 3000 + A_0 - B_0
+>= 3(1000-C_0) +(A_0-B_0) = T_0
+after that only cars can exit after at most 4000 transitions
