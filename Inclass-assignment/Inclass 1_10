@@ -1,3 +1,92 @@
 Problem 1
 (a) prove 1/x is an F18
+constant function with a constant e, exponentiated with the identity function
+f(x) = e^x then inverted
+is log(x) multipy by another constant function -1, g(x) = -1log(x)
+f(g(x)) = 1/x
+proving that 1/x is an F18 function
+
 (b) if f(x) is an F18 then so is f' = df/dx
+Proof for base cases
+id(x) /dx = 1 which is a constant and in F18
+d sin(x) / dx= cos(x) which is sin(x + pi/2) by the constructor rules, making it in F18
+
+Constructor Case inv(f), assume df/dx is F18
+we would like to show that d inv(f)/dx is F18
+let y = f(x) so x = inv(f(y))
+from leibniz's rule
+d inv(f)/dy = dx/dy = 1/(dy/dx)
+or
+inv(f)' = 1/f' o inv(f)
+since f' is F18 so is 1/f' by part (a)
+therfore so is their composition by the constructor rule
+hense it is an F18 function
+
+Constructor Case (f o g)
+assume f, g, df/dx, dg/dx are all F18
+d(f(g(x)))/dx = df(g)/dg  dg/dx
+(f o g)' = (f' o g) * g'
+the right hand can be made by the constuctor rules and our assumptions
+the other constuctor cases are similar , so our induction holds for all constructor cases
+proving that all hold for F18
+
+Problem 2.
+(a)
+base case
+lambda is erasable in zero steps, so base is satisfied
+by indution hypothesis we assume s,t are erasable
+constuctor case [s]t -> st,
+x = [s]t for s,t element of recmatch
+for all x element of RecMatch implises x element of Erasable,
+which means RecMatch is subset of Erasable
+(b)
+Basecase n=0 , P(0) is true because the empty string is in the base def of recmatch
+---
+x = py, let t' = [s]t and s' be the empty sting,
+then x=[s']t'. we know s',t' are elements of RecMatch, which implies that x is element of RecMatch because
+it is a result of the constuctor step applied to s',t'
+
+---
+in this case y=t, and s = lambda then we get [s]t constuctor of RecMatch
+---
+t is erasable, so t' is erasable, t' < |x| so by induction hypothesis we may assume t' is element of RecMatch
+this proves x is of the constructor step of rec RecMatch
+---
+by cases, we can have something infront of a set of brackets, inside, outside infront, outside behind, or nothing
+
+
+Problem 3.
+(a)
+1 ∈ S
+if n ∈ S, then 2n,3n, and 5n are in S
+(b)
+1 ∈ T
+if n ∈ T, then 18n,15n,5n are in T
+(c)
+base case (0,0),(1,1) and (2,2) are elements of L
+Constructor cases: (n,m) ∈ L then (n+3, m), (n,m+3), (-n,m), (n,-m),  and (-n,-m) ∈ L
+
+(d)
+for our base case, zero is a multiple of 3,
+assume 3 | (a-b), we would like to show that the cases
+a+3,b
+a-3,b
+a,b+3
+a,b-3
+are all part of L
+these all become (a-b) +- 3, which is a multiple of 3 based on our assumption.
+
+(e)
+suppose (c,d) are elements of L, that is 3 | (c-d).
+this means that c = r +3k and d = r + 3j for some r{0,1,2}. then starting from the base cases from (c)
+we can apply the constructor rules k times to conclude that (c,r) is element of L'. then apply the constructor rules k times to b j times to conclude (c,d) is element of L' which implies that L is a subset of L
+
+(f)
+theres no way i could have come up with this , myself
+base case (0,0),(1,1),(2,2),(−1,−1),(−2,−2),(−3,−3)(1,−2),(2,−1),(−1,2),(−2,1)
+
+Sg(x) 1 if x>=0
+      -1 if x<0
+if ||a|−|b||≤1, then (a+ 3Sg(a),b+ 3Sg(b)),(a+ 3Sg(a),b),(a, b+ 3Sg(b))∈L',
+if |a|>|b|+ 1, then (a+ 3Sg(a),b)∈L',
+if |b|>|a|+ 1, then (a,b+ 3Sg(b))∈L'
