@@ -1,0 +1,68 @@
+Started 6/1/2020
+(a)
+it may be worrying when the behaviors of finite sets are assumed to carry to infinite sets
+(b)
+for an infinite sequence a0,a1,...,a_n
+that are different element of A
+we can define f: A -> N
+by f(a) = either n, if a = an,
+or undefined, mapped to whatever
+thus proving any infinite set is atleast as big as N
+
+Problem 2.
+if there is a surjective function f: N -> S then
+suppose we say that f(0) = s where s is a least element of S, (guaranteed by WOP)
+then {F(0),F(1)} are equal to the two different least element of S
+then {F(0),F(1),...F(n)}, surjective function f tells us there is atleast 1 n for each s
+where n is an ordered element of N are mapped to each different element of S,
+in this way S is countable
+
+Problem 3
+(a)
+let f: N -> Z+
+we can show this is a surjection, simply
+similar to problem 2, each least z is mapped to each least n in order
+
+then we can show that g: N -> Z2+ is also a surjection
+if we order Z2+ first by z_first, where z_first is the first element of the ordered pair in the first Z+
+then by z_second, where z_second is the second element of the ordered pair in the second Z+
+we can see in this way that g is countable,
+from problem 2, this implies that g is a surjection
+then our bijection could be h:
+f compose g^-1  which is the same as g compose f^-1 , these are bijections
+(b)
+if we assume that Z2+ (ie Z+ x z+) is countable
+then we would like to show that Q+ is countable
+we can show that there is a bijection from Q+ to Z2+
+by taking each element of Q and representing it in its LCD form as n/c
+then represent this ordered pair as (n,c) or (Z+,Z+)
+
+Problem 4.
+
+import string
+
+def fn(s)
+  if len(s) == 0:
+    return True
+  elif len(s) > 1 and s[0] == s[1] and s[0] in string.ascii_lowercase:
+    return fn(s[2:])
+  else:
+    return False
+
+(b)
+if we take every s mapped to every thing recognized by Ps, we get the range(f) which is every thing that is recognizable
+
+(c)
+Suppose we tried to map from each s string to each pow(string)
+as stated s element of string | s not element of f(s)
+so if we take some s_0,N = f(s_0)
+by definition of N s is element of s is a string iff s is not an element of f(s)
+if we let s=s0 we get a contradiction
+s0 element of f(s0) iff s0 notelement of f(s0)
+so f is not a surjection,  the power set is strictly larger than the set of Strings
+N = NOT(f(s)) intersect pow(string)
+
+(d)
+are conclusions from (c) say that a program analyzer couldnt analyze all program
+the space of all behaviors is far too big
+there are behaviors that we also couldnt make a program out of. 
