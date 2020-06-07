@@ -65,4 +65,4 @@ N = NOT(f(s)) intersect pow(string)
 (d)
 are conclusions from (c) say that a program analyzer couldnt analyze all program
 the space of all behaviors is far too big
-there are behaviors that we also couldnt make a program out of. 
+there are behaviors that we also couldnt make a program out of.

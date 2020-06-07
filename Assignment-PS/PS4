@@ -1,0 +1,124 @@
+Problem Set 4
+Started 6/6/2020
+
+Problem 1.
+There are two methods that i like to prove this
+ the first by linear algebra
+ the moves collapse into a number of moves i in (2,-1) direction i ∈ Z
+ and a number of moves j in (1, 3), j ∈ Z
+
+ so you we would like to  get i * (2,-1) + j (1,3) = (1,1)
+ so j = 1 -2i by the top
+
+ i= −1+3j = −1+3(1−2i) =2−6i, constrained by the bottom,
+ gives us i = 2/7 thus a contradiction. we can not reach 1,1
+--------------------------------------
+ Solution
+ with invariants we can observe that
+ (3x - y) mod7 = 0
+ r(a+x,b+y)
+ =(3(a+x)−(b+y))mod7
+ =((3a−b)+(3x−y))mod7
+ =(3a−b)mod7
+ =r(a,b)
+ so for r(1,1) = 2 , we can see that the bot can not equal (1,1)
+
+Problem 2.
+
+proof by structural induction
+P(n) : f_b = n_b + 1 ; where b is a binary tree and f_b are distinct leaf labels and
+n_b are distinct internal labels
+
+in the base case we have the zero depth binary tree, it has 1 leaf and no internal
+so this satisfies our equation
+
+lets say that we label our nodes to be unique by numbering them top to bottom left to right
+     1
+   /   \
+  2     3
+ / \   / \
+4   5 6   7
+(...)
+/    \
+(k-1) k
+
+assume that P(k): f = n + 1 is true for some P(n) where n is odd due to n starting at 1 and
+each binary tree introducing 2 nodes at a time
+
+our induction step will there for be n+2, however we could redefine this to be a system where n is indexed by 1 and count the pairs of nodes + 1
+regardless
+for the induction step
+P(n+2): 1 leaf is turned into an internal node, and two new leaves are created so
+f' = f -1 + 2 and
+on internal node is created out of a prior leaf
+n' = n + 1
+
+P(n+1): f' = n' + 1
+f + 1 = n+ 1 + 1
+P(n+1): f = n + 1
+thus completing the proof
+
+
+Problem 3.
+
+(a)
+our bijection could be
+
+f(x): 1/x - 1
+where x: (0:1] and y= f(x) : [0,inf)
+
+
+(b)
+our bijection from L to (0,1]
+is going to be putting a decimal point at the beginning of our sequence element of L
+some interesting cases are,
+the infinite sequence of all 9s bijects to 0.(9)repeating =1
+this is also the case for all terminating values in (0,1]
+e.g. 0.2 will be 0.1(9)repeating
+it is an important feature that there cant be inf. 0s because this would be the same as
+inf 9 cases
+
+(c)
+our surjection from L to L2
+we will take alternating characters from each sequence element of L and map
+the odd index and even index to L2, only if the odd indexed sequence and even sequence
+are element of L
+
+(d)
+given our sets A and B if we describe a bijection where a ∈ A, and b ∈ B for each a there is a b
+then we describe the set A x A as the pairing (a,a) where each a is not necissarly the same element; and like wise for B x B, then the mapping from A -> B
+can be used on each element in the pair to map each (a,a) to (b,b) thus A x A bij B x B
+QED
+
+(e)
+from part (b) we know there is a bij from (0,1] to L
+(0,1] bij L
+then from (c) we know there is
+(0,1] bij L surj L2
+then from (d) we can append
+(0,1] bij L surj L2 bij (0,1]^2
+therefor surj from (0,1] to (0,1]2
+(0,1] surj (0,1]2
+
+schroder-berstein (SB) says A surj B,  and B surj A then A bij B
+
+so lets call (0,1], D and d element of D
+D2 could be described by the ordered pair(d1,d2) where d1 element of D and d2 is a possibly different element of D
+we can show that we can map a surj from D2 to D by
+maping each (d1, lambda) to d in D, and mapping (d1,d2) | d1 = d2, to d in D
+this is an obvious surj.
+the we invoke SB because D surj D2 and D2 surj D
+D bij D2
+
+
+(f)
+from (e)
+ (0,1] bij (0,1]2
+ (0,1] bij [0,inf)
+ from lemma in (d)
+  (0,1]2 bij [0,inf)2
+  and
+  (0,1] bij (0,1]2 bij [0,inf)2
+  or
+  (0,1] bij [0,inf)2
+QED
