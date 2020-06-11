@@ -1,0 +1,91 @@
+Taken 6/11/2020
+This is the exam that was taken over the first 80 min exam period
+
+Problem 1
+Proof by WOP
+35^(1/7) =n/d | n/d are in lowest terms, elements of N
+
+my manipulation
+(d^7) * 5 * 7 = n^7
+by fundamental thym. of arithm. we know that 5 and 7 are factors of n^7
+and also 5^7 and 7^7 are factors of n^7 and 5 and 7 are factors of n
+which follows that d^7 is proportional to 5^6 * 7^6
+so d also has factors of 5 and 7
+thus a contradiction of our original def of n and d, being in least terms
+the counter example has no least element and is an empty set
+QED
+
+---------------------------
+Problem 2.
+Proof P(a,b,c) is True for a,b,c elements of N, using WOP
+C::= {a,b,c element of N| Not(P(a,b,c)) is true}
+proof by contradiction C is not empty there is a smallest a,b,c in C
+
+3(x^4 + 3y^4) = z ^4 , where x,y,z are elements of C
+well define F(x,y) or simply F = (x^4 + 3y^4)
+
+Z = 3^(1/4) F ^(1/4)
+we will note that F will be element of Z
+because Z is mapped with addition and exponentiation
+so we have some F element of Z+
+
+by cases we have Z taking the form n*3^(3/4) or it not
+F(x,y) can not be n*3^(3/4) for reasons mentioned earlier about F element of Z+
+
+furthermore we can show that 3^(1/4) *F is irrational by the method is Problem 1
+simply stated this is a root of a prime which by def of prime in not in N.
+since F is in Z and 3^(1/4) is not in Z, and in Q
+z is irrational
+and there is a contradiction of our original definition of z.
+C is empty
+QED
+
+Problem 3.
+∈∀∃
+a)
+∀x (yx=y)
+
+b)
+∀m (n/m =w | w∈ N)
+
+c)
+Not(∃m | m|n | m ∈/ {1,n})      , where ∈/ = not element of
+
+d)
+lets define a R(x): {p|x  |  (p is prime AND R(x/p)) OR p =1 }
+R(n) is valid
+
+Problem 4.
+a)  N
+b)  B
+c)  I
+d)  B
+e)  S
+
+Problem 5.
+S(n=0) = 7 + 7 + 4 ; shows that our base case is valid
+
+also
+S(19) = 7 + 4 + 4 + 4
+S(20) = 4 + 4 + 4 + 4 + 4
+
+S(n) implies S(n+1)
+assume S(n)
+by cases we will show S(n+1) is valid
+
+
+case 1.
+S(n) has one 7 or more
+in that case replace 7 with 4+4
+to make S(n+1)
+
+Case 2.
+S(n) has no 7
+by our base cases S(n) | n >= 20
+S(n) will have at least five '4's;
+S(n+1) is made by removing five 4 and replacing with 7+7+7
+
+we can see that it holds that with n>20 S(n) will either have one 7 or
+>= five '4' (because three sevens becomes six fours etc.)
+this completes the cases
+  QED
