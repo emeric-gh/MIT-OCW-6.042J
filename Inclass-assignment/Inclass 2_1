@@ -39,9 +39,9 @@ then those are made into a product series
 then GCD and LCD must be a rearrangement of mn. and ab = ba for all a and b
 
 Problem 3
-a) *i have no answer for this yet**
+a)##i have no answer for this yet**
 
-b)
+b)##incomplete
 rule (2) is first in the logical series,
 so we can assume it will be run n number of times
 where 2^n is a factor shared by x and y
@@ -50,3 +50,56 @@ so we need to see if a factor of 2 is returned to both x and y
 
 (3) only removes a factor of 2 from x
 (4) " " removes from y
+
+(c)## no answer Yet
+
+Problem 4.
+(a)
+we can use the fact that the gcd(a,b)*lcm(a,b) = ab
+c is a divisor of a,b and c is a divisor of d, for d = ab/lcm(a,b),
+hense d is the gcd(a,b)
+our proof is as follows
+c is a divsor of a,b so by def a,b our divsors of ab/c which means
+lcm(a,b) is a divisor of ab/c and c is a divisor of ab/lcm(a,b)
+
+and ab/lcm(a,b) by original definition is the gcd(a,b)
+QED
+
+(b)
+gcd(a,b) = 1 = ua + vb, for some u and v
+multipied by c
+we have c = uac + vbc
+if a | bc then aq = bc so
+c = uac + vaq = (uc + vq)a
+QED
+
+(c)
+proof by contradiction lets assume p doesnt divide a, b
+but p|ab
+so gcd(p,{a,b}) = 1
+by linear combinations
+xp + ya = 1
+up + vb = 1
+
+(xp + ya)(up + vb) = 1
+xpup + xpvb + yaup + yavb = 1
+by grouping
+p(sup + swb tau) + ab(tw) = 1
+i.e. pM + abN = 1; gcd(p,ab) = 1
+thus a contradiction
+QED
+
+(d)
+ax + by = m, smallest element of N+
+let q = a/s
+implies
+a mod m = a - qm
+= a - q(ax + by)
+= a(1-qx) + b(-qy)
+0 <= a mod m < m, we have that a mod m = 0,
+we have m | a and m | b
+thus m is a common divisor of a and b and so gcd(a,b) >= m
+we also have that
+gcd(a,b) | m , since m is a linear combo of a and b
+implying gcd(a,b) <=m
+both parts let us conclude that gcd(a,b) = m
