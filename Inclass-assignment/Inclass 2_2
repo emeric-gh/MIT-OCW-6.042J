@@ -1,1 +1,68 @@
 Inclass 2_2 , Started 6/13/2020
+Problem1.
+remainder(9876^(3456789)(9^99)^5555 -6789^3414259,14)
+
+where rem is remainder(x,14)
+
+rem 9876 is 6
+so our left term becomes
+6^3456789
+
+6^2 = 36
+6^3 = 216, rem 216 =>6
+so first term is 6
+
+second term
+9^3^3^11
+9^3 = 729 is rem 1
+second term is 1
+
+6789 by division is rem 13
+13 is prime to 14
+so 13^3 = rem 13
+so we have
+6*1 - 13 = -7, but remainder cant be negative so we have 7
+
+problem 2
+x ≅ m mod a
+x ≅ n mod b
+
+(a)
+so based on our hint
+e_a = inv(b)b
+e_b = inv(a)a
+x = m*e_a + n*e_b
+
+to show (2)
+lets use the lemma
+rem(x,a) = rem(m,a)
+rem(m*e_a + n*e_b , a)=
+rem( rem(m,a) * rem(e_a,a) + rem(n,a) * rem(e_b), a)
+note that rem(e_b,a) = 0
+and rem(e_a,a) = 1
+so we get
+rem(rem(m,a),a) = rem(m,a)
+similar for x ≅ n mod b
+
+(b)
+from perevious we know that ab = gcd()lcd()
+by ab being relatively prime we know gcd(a,b)= 1 so ab =lcm(a,b)
+since x is divisible by a and b then is is divisible by the lcm(a,b)
+and in this case that is a*b
+(c)
+as before x ≅ x' mod a iff x-x' ≅ 0 mod a
+same with b
+implies ab
+(d)
+we know from (a) that (2) and (3) exist,
+suppose x' is such a solution
+x ≅ m (mod a) and x' ≅ m (mod a)
+we get x ≅ x' (mod a)
+similar x ≅ x' (mod b)
+from (c) we get x ≅ x' (mod ab)
+QED
+(e)
+if ab is a factor of x - x' so are a and b
+
+
+Problem 3
