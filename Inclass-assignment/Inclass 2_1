@@ -41,17 +41,23 @@ then GCD and LCD must be a rearrangement of mn. and ab = ba for all a and b
 Problem 3
 a)##i have no answer for this yet**
 
-b)##incomplete
+b)
 rule (2) is first in the logical series,
 so we can assume it will be run n number of times
 where 2^n is a factor shared by x and y
 after this is done (x and y) have no factors of 2
 so we need to see if a factor of 2 is returned to both x and y
 
-(3) only removes a factor of 2 from x
-(4) " " removes from y
+transformation (3) only removes a factor of 2 from x
+transformation (4) " " removes from y
+transformation (5)&(6)
+to get these steps in the else if sequence, we know that both x and y are odd
+completing either of these steps will make x even, but will leave y as odd
+there fore x and y will never be both even again,
+transition (2) will never be revisited
 
-(c)## no answer Yet
+(c)
+
 
 Problem 4.
 (a)
