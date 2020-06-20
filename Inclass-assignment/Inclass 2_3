@@ -1,0 +1,24 @@
+Inclass 2.3
+Started 6/16/2020
+
+Problem 1
+
+26 = 2*13 ; 297 = 3^3 * 11 ;
+they are relatively prime
+k^phi(297) ≅ 1 (mod 297)
+
+where phi(297)
+= phi(3^3*11)
+=phi(3^3)*phi(11)
+=(3^3-3^2)(11-1)
+=180
+
+using the hint
+
+26^1818181 = 26*26^(180*10101)
+=26*1^(10101) (mod 297)
+=26
+answer is 26
+
+Problem2
+(a)

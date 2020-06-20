@@ -1,0 +1,33 @@
+Started 6/19/2020
+
+Problem 1
+(a)
+
+-choosing p and q
+p, q = 11, 17
+n = 187
+
+- e element of [1,n) such that gcd(e,(p-1)(q-1)) = 1
+gcd(e,10*16) = gcd(e,160) = 1
+e = 3 , by euclidean 1 step gets us remainder 1
+our public key is (e,n) = (3,187)
+
+- finding d with pulverizer or eulers thorem
+de cong. 1 (mod (p-1)(q-1))
+d*3 cong 1 mod(160)
+
+our private key is (d,n) = (107,187)
+
+(b)
+m =5; our message
+our encrypted message
+m_hat = rem(m^e, n)
+= rem(5^3,187) , idk if this is going to be the most secure encryption
+m_hat = 125
+
+(c)
+decrypt the message
+m = rem(m_hat^d, n)
+= rem(125^107, 187) = 5
+
+Problem 2
