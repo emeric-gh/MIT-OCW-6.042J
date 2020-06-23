@@ -1,0 +1,57 @@
+Inclass 2.6 started 6/23/2020
+
+Problem 1
+(a)
+six terms will be required to complete all these subjects because our longest chain of subjects is six length
+that chain is 18.01-18.03-6.002-6.004-6.033-6.857
+each one must be taken in the term after the prior one was completed
+using the greedy strategy our complete schedule would be
+T1. 6.001, 8.01, 18.01
+T2. 8.02, 18.03, 6.042, 18.02, 6.034
+T3. 6.002, 6.046
+T4. 6.003, 6.004, 6.840
+T5. 6.033
+T6. 6.857
+
+(b)
+such a schedule of 5 not includign 18.03 might be
+6.034, 6.003, 6.004 6.042, 18.02
+others would be
+6.034,6.003,18.02,{6.004, 6.033,6.857},{6.042,6.046,6.840}
+seems to be 9 different such sets
+
+(c)
+1 per term list
+8.01,8.02,6.001,6.034,18.01,18.03,6.042,18.02,6.046,6.840,6.002,6.003,6.004,6.033,6.857
+
+(d)
+there are no 3 class dependencies so you should be able to complete all the subjects in ceiling(subjects/2)
+the antichains are all bigger than two
+should take 8 terms
+
+(e)
+it would take 5 terms with no perquisites, but we know that 6 is the min due to the longest chain
+and we can easily show that we can complete the subjects in 6, taking 3 per term
+
+Problem2.
+
+(a)
+valid order
+(lisa, annie) : (logo, fleet) -> (control,shots) -> (openchain,) -> (train,) -> (launch, microsoft)
+
+(b)
+total hours are sum(8,9,11,10,4,6,18,8)
+74 hrs, halved is 38 hrs each
+It will take longer than that because there is a chain of 39 hours,so that the min time with unlimited threading
+
+(c)
+as we stated in problem (b) the most time consuming path is the longest one,
+IE logo, control, chain, army, microsoft which totals 39 hours
+this might be too low because if we take everything not in the critical chain and assign it to Annie,
+then we have disconnected chains that have to wait for lisa,
+that wait time gets added to Annies chain making annies effective time longer than the critical chain time
+
+(d)
+they can do it in the min 39
+
+Problem 3
