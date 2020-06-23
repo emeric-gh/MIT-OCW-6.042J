@@ -1,0 +1,62 @@
+Inclass 2.5
+Started 6/22/2020
+
+Problem 1.
+
+(a)
+Digraph by ordered pairs
+(v,a)(a,b)(b,v)(v,x)(x,y)(y,v)
+
+note that our even closed path is
+vabvxyv
+
+note that our only cycles odd length, of 3
+EG abva, or vxyv
+
+(b)
+Digraph by ordered pairs
+(v,a)(a,b)(b,x)(x,y)(y,b)(b,a)(a,b)
+
+note that we have a even non-cycle closed path, connected to a odd length cycle that doesnt contain v
+giving us our odd length path with no cycle containing v
+
+(c)
+****incomplete****
+to
+
+
+
+Problem 2.
+dist(u,v) <= dist(u,x) + dist(x,v) iff x is on a shortest path from u to v
+
+(a) ****incomplete****
+proof of iff from left to right
+
+(b) ****incomplete****
+proof of iff from right to left
+
+
+Problem 3.
+
+(a) 0111010001
+***incomplete***
+explain why this is the shortest length 3-good
+
+(b) each vertex of the figure 1 is every 2 bit combination the add the edge value to each vertex and we get every possible
+combination of 3 bits. since the edge tranforms a 2 bit vertex to the next 2 bit vertex we know they can describe one string of bits
+therefor if we travel along all edges we know that our string will be 3-good.
+my string path is (01) +1 (11) +1 (11) +0 (10) +1 (01) +0 (00) +0 (00) +1 (01)
+
+(c)
+from part (b) we know including every edge gives a 3-good
+so including every edge once and no more gives us the minimum string length that is a 3-good
+
+(d)***incomplete***
+the minimum length is 2 * 2^k + k
+
+-transitions of Bk
+-in transitions and out transitions
+positive path from any vertex to any other vertex of lenght at most k
+
+Problem 4
+****incomplete****
