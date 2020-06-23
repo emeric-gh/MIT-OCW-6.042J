@@ -40,24 +40,42 @@ then those are made into a product series
 then GCD and LCD must be a rearrangement of mn. and ab = ba for all a and b
 
 Problem 3
-a)##i have no answer for this yet**
 
-b)
-rule (2) is first in the logical series,
-so we can assume it will be run n number of times
-where 2^n is a factor shared by x and y
-after this is done (x and y) have no factors of 2
-so we need to see if a factor of 2 is returned to both x and y
+(a)
+our invariant P : gcd(ex,ey) = gcd(a,b)
+when we get to the the last step we have
+gcd(e*1,e*0) = e ; which is true
 
-transformation (3) only removes a factor of 2 from x
-transformation (4) " " removes from y
-transformation (5)&(6)
-to get these steps in the else if sequence, we know that both x and y are odd
-completing either of these steps will make x even, but will leave y as odd
-there fore x and y will never be both even again,
-transition (2) will never be revisited
+we can see that this P is preserved in the following transitions
+transition(2) gcd(2ex/2,2ey/2) =gcd(ex',ey')
+transition(3)&(4) we know that at this point were past (2) so 2 is relatively prime to
+either x or y so gcd(ex/2,ey) =gcd(ex',ey'), and similar for gcd(ex,ey/2)
+on (7) x and y are equal so we have gcd(x,0) = gcd(x',y')
+gcd(e*1,e*0) = e = gcd(a,b)
+
+
+
+(b)
+transitions(2)
+will make at least one of {x,y} odd, possibly both
+
+transformation (3) & transformation (4)
+will make both odd.
+transition(5) will then
+have odd minus odd to make x even, y stays y(odd)
+transofrmation(6)
+x is odd and y is odd
+x becomes even , y becomes the old odd x
+the last transformation (7) is terminating
+we never get sent back to even , even for {x,y}
 
 (c)
+if we look at the case of a large odd y
+we would go through transition (6) then transition (3) then (5) in between halving of y
+i would note that this would be a strange case
+and it seem more likely that we bounce between a a (5) or(6) and a then a halving with (3) or (4)
+we know their will be always a (7)
+so 1+3(loga + logb) is some kind of upper bound
 
 
 Problem 4.
