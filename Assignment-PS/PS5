@@ -1,3 +1,62 @@
 Problem Set 5
 
 Problem 1.
+
+Problem 2.
+(a)
+Proof that k is self-inverse IE.
+k^2 ≅ 1 (mod p) | 0< k <p  iff either k=1 or k = p-1
+
+Part 1.
+LHS implies RHS
+assume k^2 ≅ 1 (mod p)
+rem(k,p)rem(k,p) = rem(1,p) - by lemma 8.6.1 & lemma 8.7.1
+we would like to show that
+k = 1 or k = p-1
+for k = 1
+rem(1,p)rem(1,p) = rem(1,p) , is valid
+for k = p - 1
+rem(p-1,p)rem(p-1,p) = rem(1,p)
+(rem(p,p)-rem(1,p))(rem(p,p)-rem(1,p)) =
+(-rem(1,p))(-rem(1,p)) = rem(1,p), is valid
+therefore
+k^2 ≅ 1 (mod p) | 0< k <p  implies k=1 or k = p-1
+
+Part2.
+Now we would like to show
+RHS implies LHS
+
+assume k = 1 or k = p-1 is true
+we would like to show that that implies
+k^2 ≅ 1 (mod p)
+....not sure....
+????
+
+part 3.
+k^2 ≅ 1 (mod p)
+k^2 -1 ≅ 0 (mod p)
+(k+1)(k-1)  ≅
+our roots in (mod p) are
+k= 1 ; (2)(0) ≅ 0 (mod p)
+k = p - 1 ; (p-2)(p) ≅ (p-2)(0) ≅ 0 (mod p)
+
+
+(b)
+if p is a prime then,
+(p-1)! ≅ -1 (mod p)
+
+in a base case p =2
+1 ! ≅ -1 (mod p)
+in case p = 3
+2*1 ≅ -1 (mod p)
+
+by induction in case p+1
+
+1 * 2 * 3 * ... * (p-3)(p-2)(p-1)
+
+
+Problem 3.
+(a)
+(b)
+(c)
+(d)

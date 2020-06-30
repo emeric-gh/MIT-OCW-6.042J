@@ -42,7 +42,8 @@ to show (2)
 lets use the lemma
 rem(x,a) = rem(m,a)
 rem(m*e_a + n*e_b , a)=
-rem( rem(m,a) * rem(e_a,a) + rem(n,a) * rem(e_b), a)
+rem(m,a) * rem(e_a,a) + rem(n,a) * rem(e_b)
+
 note that rem(e_b,a) = 0
 and rem(e_a,a) = 1
 so we get
