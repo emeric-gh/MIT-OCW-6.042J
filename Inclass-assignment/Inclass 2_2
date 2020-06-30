@@ -8,18 +8,23 @@ rem 9876 is 6
 so our left term becomes
 6^3456789
 
-6^2 = 36
-6^3 = 216, rem 216 =>6
+6^1 =6 ; (rem 14) = 6
+6^2 = 36 ; rem 14 = 8
+6^3 = 216, rem 14 =>6
+3456789 is odd
 so first term is 6
 
 second term
-9^3^3^11
+((9^3)^3)^11)
 9^3 = 729 is rem 1
 second term is 1
 
 6789 by division is rem 13
 13 is prime to 14
-so 13^3 = rem 13
+13 rem is 13
+13^2 rem is 1
+13^3 rem is 13
+the final term is 13
 so we have
 6*1 - 13 = -7, but remainder cant be negative so we have 7
 
