@@ -47,13 +47,13 @@ if p is a prime then,
 
 in a base case p =2
 1 ! ≅ -1 (mod p)
-in case p = 3
+in case p = 3 where p is odd... as it often is
 2*1 ≅ -1 (mod p)
 
-by induction in case p+1
-
+in the p case
 1 * 2 * 3 * ... * (p-3)(p-2)(p-1)
 
+by part (a) we know that 
 
 Problem 3.
 (a)
