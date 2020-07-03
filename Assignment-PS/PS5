@@ -4,6 +4,9 @@ Problem 1.
 after transition 1 we would like to show
 ua + vb = x
 sa + tb = y
+
+initial
+u =1, v =0, s=0, t=1
 afterwards we will make the following transitions to u,v,s,t
 after each of the gcd transitions
 
@@ -21,11 +24,11 @@ else,
   s = (s+b)/2, t=(t-a)/2
 
 after transition (4) x>y
-s = s - u
-t = t - v
+u = u - s
+v = v - t
 after transition (5) y>x
-u=s,v=t
-s=u,t=v
+u= s - u, v = t - v
+s = u, t = v
 
 
 
