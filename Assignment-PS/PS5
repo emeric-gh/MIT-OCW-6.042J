@@ -65,12 +65,33 @@ QED
 
 
 
-
-
-
-
 Problem 3.
+
 (a)
+f [0..ab) -> [0..a) x [0..b)
+f(x) = (rem(x,a),rem(x,b)) is a bijection
+if for each m,n combo there is a unique x then f(x) is one to one
+by the Chinese remainder theorem this is a bijection
+
 (b)
+Zab* to Za* x Zb* is a bijection
+
 (c)
+if (a) shows a bijection from f(x) -> (rem(x,a),rem(x,b))
+and (b) shows a bijection from Zab to Za* x Zb*
+then i suppose we have a multiplicative property
+
 (d)
+the only values of gcd(p^k,m) are 1,p,p^2,..,p^k and if m is not a multiple of p then
+the gcd() will be 1.
+mutiples of p^k that are less then or equal to p^k are p,2p,3p,...,p^(k-1)p
+there are p^(k-1) of them so we have to subtract that form the interval size p^k
+p^k-p^(k-1) numbers are relatively prime to p^k
+anotherway of writing this would be
+p^k(1-1/p)
+which would be = to phi(p^k)
+
+where n has the primefactors p1p2..pj
+for phi(p1p2..pj) we have by the proof in (c) that the above is multiplicative
+=p1p2..pj (1-1/p1)(1-1/p2)...(1-1/pj)
+QED
