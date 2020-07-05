@@ -26,9 +26,13 @@ u <-> x <-> v
 there is a path from u to v, and from v to u but no cycle containing both u and v
 
 (b)
-**incomplete**
 prove that if there is a positive length walk in digraph that starts and ends at node v,
 then there is a cycle that contains v
+
+from theorem 9.2.3 the shortest walk is a path
+from lemma 9.2.6 the shortest closed path through v is a cycle through v
+
+so there must be a cycle though v
 
 Problem 3.
 
@@ -53,3 +57,15 @@ we can see that i will peck i+1, i-2, and virtually peck i-1, and i+2,
 which accounts for all other chickens
 
 (c)
+so we have some k with the most outdegrees (pecks), who pecks some set of direct pecks well call d el.of D
+then we have the indirect pecks i el. of I, who peck the k
+we know that the size of D is larger than I because sum Outdegree is the sum of edges and k has above average outdegree by definition
+
+suppose k is not a King,
+then there would be some i who pecks k and all in the set D.
+this raises a contradiction. the i who pecks k and the entire set of D
+would have more outdegrees than k, which can not be true.
+
+there must be some path from k to every i through some d
+k reaches all others (i and d) through direct or virtual, and is therefore a King
+QED
