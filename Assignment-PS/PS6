@@ -1,0 +1,55 @@
+Problem Set 6
+Started 7/5/2020
+
+Problem 1.
+
+p,q element of 200 digit primes, p != q
+n=pq
+m element of [0..n)
+
+gcd(m,n) = q
+gcd(m,pq) = q
+m = k(q)
+
+there are q-1 such multiples of q.; similar to theorem 8.10.10
+so our fraction is
+q-1/n
+q ~ 10^200
+n ~ 10^400
+
+so our fraction of dangerous messages is roughly 1/10^200
+
+
+Problem 2.
+(a)
+u <-> x <-> v
+there is a path from u to v, and from v to u but no cycle containing both u and v
+
+(b)
+**incomplete**
+prove that if there is a positive length walk in digraph that starts and ends at node v,
+then there is a cycle that contains v
+
+Problem 3.
+
+(a)
+the simplest case for a 10-chicken tournament graph with a king chicken that has outdegree 1
+would be:
+the special case king (K) connects its one out to a proxy (P).
+the proxy pecks every remaining chickens 3-10.
+after these connections all other connections can be filled arbitrarily to fit the definition of a tournament digraph
+
+K -> P -> {3..10}
+-note that K will not be the only king
+
+(b)
+a 5-chicken tournament graph with all kings (k_i)
+on the ring Z_5
+all k_i peck k_i+1
+all k_i peck k_i-2
+after this all other relations can be filled arbitrarily
+
+we can see that i will peck i+1, i-2, and virtually peck i-1, and i+2,
+which accounts for all other chickens
+
+(c)
