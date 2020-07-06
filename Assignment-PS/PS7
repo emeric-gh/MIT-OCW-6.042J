@@ -1,0 +1,43 @@
+Problem Set 7
+Started 7/6/2020
+
+Problem 1.
+(a)
+inv(R)
+if aRb and bRc implies aRc
+then b inv(R)a and c inv(R)b implies c inv(R)a
+
+(b)
+R intersect S
+if a R b and b R c implies a R c
+and a S b and b S c implies a S c
+then of course
+a R&S b and b R&S c implies a R&S c
+
+(c)
+R compose R
+R compose R is transitive
+*incomplete**
+
+(d)
+R compose S
+this is not transitive.
+counter example
+*incomplete**
+
+Problem 2
+
+(a)
+intersect of two equivalence relations
+is equivalence relation
+*incomplete**
+
+(b)
+union of two equivalence relations
+is not nessisarily an equivalence relation
+*incomplete**
+
+Problem 3
+
+it looks like
+G1 G2 and G3 are isomorphic
