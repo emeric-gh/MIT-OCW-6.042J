@@ -1,0 +1,102 @@
+Inclass 2.8
+started 7/7/2020
+
+Problem 1.
+
+(a)
+the claim could be true. if we assume that each encounter has a female and male person, then we know that their average should be the same if they have the same population size.
+if this is the case and there are the same number of males as females then we could assume that either the males are exadurating or the females are under reporting.
+
+(b)
+the constant c in m = c*f is the fraction of males to females. if its less than 1 then there are more females, more tahn 1 and there are more males, and =1 then there are equal m and f.
+this will acount for the difference in average.
+
+(c)
+x will be the fraction of female non-virgins to male non-virgin. the higher the percent of non-virgin population the lower the average will be in this partitioned population set.
+in this example we can see that x will be larger than 1.
+
+(d)
+this will not be possible if the population sizes arnt the same. this also wont be possible if the non-virgin size isnt the same.
+because both of these are beign paired 1:1
+
+Problem 2.
+(a)
+proof by induction
+in the base case of 2 vert. with 1 edge we have 2 verticies with 1 degree each.
+
+if we call P(n) some simple graph with n verticies we will assume that it currently has an even number of verticies.
+with odd degrees
+
+in the case that we,
+create a new vertex and connect it to the graph P(n) we create 1 odd degree vertex, and also if we connect it to an odd then we remove an odd. if we connect it to an even vertex that becomes an odd
+so in each case we net 0, or 2 new odd connection
+so our sum of odd degrees remain even
+
+in the case that we,
+connect existing unconnected verticies
+if we connect two odds we remove two odds, and still have even # of odd degrees
+if we connect two evens we create two new odd degrees, the sum still is even
+if we connect an odd and even we net 0,
+in all cases the sum of odd degree vertices remains even
+thus completes our cases and our proof by induction
+
+(b)
+if we make a simple graph of hand shakes, where people are the vertices and handshakes are the edges
+we see that odd number of hand shakes is the same thing as odd degrees
+so the proof is the same as (a)
+
+(c)
+any graph of handshakes will follow the rule in (a) so if there is 1 person with odd shakes then there is atleast another with odd shakes.
+now we might nievly think of a case where there is no connection between an odd person and another odd person, in a separate island of handshakes that has no bridge between.
+however these two islands of handshakes can each be their own graphs of handshakes that must still follow the rules of (a)
+so there will be another connected person with odd shakes.
+
+Problem 3.
+are isomorphisms f and g
+f(1) = a
+f(2) = b
+f(3) = c
+f(4) = d
+f(5) = e
+f(6) = f
+
+h is the same but h(1)=b,h(2)=a
+
+g(1) = a
+g(2) = b
+g(3) = d
+g(4) = c
+g(5) = f
+g(6) = e
+
+i is the same except i(1)=b, i(2)=a
+
+we can see that 1,2 and a,b are interchangeable as they are all connected to two 3rd degrees and then the rest of the graph is sysemtric
+we can see that 3-5 and 4-6 are symetric with c-e and d-f so these can be swapped.
+this accounts for all the verticies so we know we have
+4 isomorphisms
+
+problem 4.
+(a)
+this sort of count of vertices is preserved
+this is darn near the definition of isomorphism
+(b)
+cycles are preserved because connections are preserved
+(c)
+counts of degrees is preserved because all connections are preserved
+(d)
+this looks like its not preserved
+length values are not normally assigned to simple graphs.. if this means length in number of edges
+that would be preserved.
+(e)
+degrees of connectivity is preserved
+(f)
+cycles are preserved
+(g)
+this is preserved
+(h)
+edge lengths are not preserved
+(i)
+not sure
+(j)
+not sure
