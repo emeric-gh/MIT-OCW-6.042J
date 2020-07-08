@@ -1,0 +1,101 @@
+inclass 2.9
+started 7/8/2020
+
+Problem 1.
+(a)
+the vertices correspond to variables
+edges correspond to simultaneous use in an equation
+see graph in figure 1.
+
+(b)
+R1 is red
+R2 is blue
+R3 is yellow
+we need three registers
+
+(c)
+for our purposes i would count it as a new variable/vertex and call it t'
+
+Problem 2.
+
+(a)
+counter example
+a - b    c - d
+graph is not connected all vertex have positive degree
+
+(b)
+the base case is the issue. it is not of positive degree
+
+Problem 3.
+(a)
+
+
+(b)
+lets check the truth table for OR
+we will call the triangle that has the PorQ the "top triangle"
+
+it is important to note that the top triangle has to each have
+T,F,N in some arrangement
+
+in the case P,Q is T,T
+the base of the triangle, touching P,Q has to be F,N or N,F
+leaving PorQ to be T
+
+in the case P,Q is T,F
+the connected node below must be N
+the node to the left must be F
+leaving PorQ to be T or N
+but also the Triangle is completely defined at this point
+the only solution is PorQ must be T
+
+same thing happens with P,Q is F,T
+
+in the case F,F
+the base of the triangle has to be {N,T}
+leaving the top to be F
+
+(c)
+we must remove the connection between the left node and the
+T in the further left T,F,N triangle
+so instead of -F-N-T-(node)<
+we want N-T-F-(node)<
+this will cause its options to be {T,N}
+so when P,Q are T,F or F,T and the node beneath them is N
+(node) will be T, forcing the PorQ to be F
+which is the difference between OR and AND
+this also doesn't affect PQ = TT , FF
+
+Problem 4.
+(a)
+we can verify by drawing a cube
+   001----000
+  / |      /|
+ 011----010 |
+ | 101---|-100
+ | /     | /
+ 111----110
+we can test the three symmetric x!=y, that is 1 edge away
+2 edge away and 3 edge away are the only non symmetric cases
+
+we can see that with each of these three cases there are 3 cycles that only share the beginning and end
+
+(b)
+if there are 3 unique paths in H3 from every x,y where x!=y
+then the connectivity is 3
+
+(c)
+when we compare the 3 case to the 4 case, if we are traveling to any point
+<=3 edges away we know the existing solutions, then there is one added by traveling in the additional dimension
+there will be non unique answers to the path in this case but there will be only 4 connectivity
+because the initial step will be 1 in each direction.
+in the case where the edge is 4 edges away we know that all edges will be used to create 4 paths that travel from x to y
+
+a similar proof could be made for a induction proof using n+1 instead of 4
+
+we could also make a general strategy for the case where the x and y are n edges away,
+on the first turn a path is started by changing one of each of the bits of the n-bit string
+then from there the string of each path checks the bit to the right of the bit that was just changed
+if that bit is different from the end then the bit is flipped if not, nothing is done that turn and you move on to the next bit to the right(wraping when you get to the end)
+in this way you can create n different paths that will travel from x to y
+we know they will never be the same because they will always be adjusting a different bit from each other and they started out with differnt paths to begin with
+they will also only ever take n moves to reach the end because they are adjusting each bit to look like the answer
