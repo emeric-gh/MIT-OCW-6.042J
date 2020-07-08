@@ -1,0 +1,78 @@
+Inclass 2.10
+Started 7/8/2020
+
+Problem 1.
+
+(a)
+
+the edge selection would be
+<0,0 - 1,0>, <0,1 - 1,1>, <0,2 - 1,2>, ... top to bottom, then left to right for all horiz. edges
+then all the left vertical edges would be selected top to bottom
+<0,0 - 0,1>, <0,1 - 0,2>, <0,2 - 0,3>
+completing the MST
+
+this procedure would be supported because it is a legal coloring for the grey algorithm
+this coloring would just make the lowest cost edge gray
+
+(b)
+this path would go:
+<1,2 - 0,2> , then all of the horiz edges would be selected left to right,
+then it would go up <0,2 - 0,1>.
+then all of the horiz edges would be selected left to right
+then it would go up again to <0,1-0,0>
+then all of the horiz edges would be selected left to right
+finally
+it would go down to <0,2-0,3>
+then all of the horiz edges would be selected left to right
+
+the grey edge lemma justifies this algorithm because we are following the procedure by
+creating 1 edge and then coloring everything connected as 1 color and everything else another
+and working on the gray edges at the boundaries.
+so this follows the procedure
+(c)
+**incomplete**
+
+(d)
+they all look like
+
+
+0,0 - 1,0 - 2,0 - 3,0
+|
+0,1 - 1,1 - 2,1 - 3,1
+|
+0,2 - 1,2 - 2,2 - 3,2
+|
+0,3 - 1,3 - 2,3 - 3,3
+
+Problem 2.
+since the tree is connected there is at least one path between every pair of vertices. if there are or more paths between two arbitray points
+then we would have a cycle and it would not be a tree. hence the graph is a tree iff there is 1 unique path between each point
+
+Problem 3.
+proof that the min weight edge is in the MST.
+
+by cases
+ if the edge is a cut line, E.I. it is in all spanning trees of G IE not in a cycle,
+then it is in all spanning trees including the MST
+
+if the edge is in a cycle then there is a choice to remove an edge in the cycle,
+ between the min edge and a (or a number of) larger edge(s).
+so the MST would include the min edge by definition.
+
+
+Problem 4.
+(a)
+a forest is made of trees
+each tree in a forest could be clustered in any arrangement in such a list,
+then we would take the following procedure for each tree to make such a list with an arbitrary tree.
+
+using theorem 11.10.3 we know that every connected subgraph of a tree is a tree
+we also know that every tree of at least two vertices has at least two leaves.
+so we could go backwards to describe the ordering
+at the bottom is one of the two leaves, when we remove a leaf we have a new subgraph that is still a tree
+with two leaves. we continue in this way forming our list backwards
+in every subgraph the leaf to be removed is n of the list, and every leaf has 1 connection to the list
+so the graph of width 1 is forest 
+
+(b)
+see above
