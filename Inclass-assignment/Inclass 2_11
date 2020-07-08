@@ -1,0 +1,26 @@
+Inclass 2.11
+Started 7/8/2020
+
+Problem 1.
+
+(a)
+our first ritual with the student as the males, yields the following marriages
+
+Sarah     - At&t
+Albert    - Bellcore
+Tasha     - HP
+Elizabeth - Draper
+
+and with the companies as the males
+
+At&t     - Albert
+Bellcore - Sarah
+HP       - Tasha
+Draper   - Elizabeth
+
+(b)
+one procedure would be run the matching twice with one side as male and then the other side as male
+then compare them
+this is because if optimal matching is the same as pessimal matching then there is 1 ordering
+
+Problem 2.
