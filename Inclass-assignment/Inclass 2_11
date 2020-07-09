@@ -24,3 +24,42 @@ then compare them
 this is because if optimal matching is the same as pessimal matching then there is 1 ordering
 
 Problem 2.
+
+(a)
+this is preserved once its true it cant become untrue.
+this is because the ritual garentees everyone get married at the end so alice
+will never be removed from the list.
+
+(b)
+this is true until the day that ends in termination
+so ultimately it is not preserved.
+
+(c)
+alice is going up in preference and harry is going down in preference.
+if this were false then this would create a rogue couple
+
+(d)
+this is preserved, because the men serenade in order of preference.
+so if she was crossed off then she was higher pref. to anyone hes serenading afterwards
+
+(e)
+this is not preserved in all cases.
+there could be a suiter that gets rejected then moves to alice that she perfers over harry
+
+Problem 3.
+
+let some boy "b" and some girl "g" be people that will not be married at the end of the ritual.
+we would like to show that they are not a rogue couple, and therefor the ritual works
+
+consider two cases
+case 1.
+g is not on b's list. then by the invariant we know g perfers her husband to b.
+so they are not a rogue couple.
+case 2.
+g is on b's list. but since b does not marry g, then there must be higher priorities on his list
+one of which he will marry. and he will perfer to g so he must prefer his wife.
+so b and g cant be a rogue couple
+since b is an arbitrary boy it holds for all boys
+QED
+
+Problem 4.
