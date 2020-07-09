@@ -1,0 +1,49 @@
+Problem Set 8
+started 7/9/2020
+Problem 1.
+
+Proof by contradiction lets say we have two different MST, M and N of the same graph.
+their differences are edges E of set M-N, in particular e is the smallest edge that in one and not the other.
+By definition if we add an edge to a spanning tree then we have created a cycle. so if we add a smaller edge e to N
+we have a cycle then we could remove another larger edge than e. if this is possible then N was not a MST
+thus a contradiction
+we can only have one MST
+
+Problem 2.
+(a)
+see figure 1 for 4 color of graph
+
+(b)
+by picture in we can show that if we try to color with 3 we will have to implement a 4th color
+
+proof by contradiction,
+suppose we start coloring the graph with 3 colors.
+if we start coloring the outside we see that we have an outer cycle of 5 vert.
+we know that this length cycle must be colored with 3. we have done an example coloring in figure 2.
+the direct consequence of this is that the inner set of verts labeled 1-5 have no degrees of freedom for coloring
+on 3 vertices, in this case 1,4,5. we will note that due to the symmetry of this graph this coloring could be done in any orientation 
+and the same result would be true but with a different rotational symmetry.
+vert 1,5,4 we can see are constrained to be each a different color
+because they are all adjacent to vert. 6, this means vert 6 needs a 4th color to complete the graph coloring
+thus it is impossible to color with 3.
+
+Problem 3.
+(a)
+we can see that this is stable by eliminating possible rogue members
+B1 is matched with his 1st pref so he will be rogue with no one. so he is impossible to rogue
+B2 the same is true
+G1 and G2 have their second choice, but their first choices we have established are
+impossible to rogue.
+therefore G1 and G2 are impossible to rogue
+the remaining 2x2 have complete information on each others preference and we can see that they are stable
+(b)
+the stable match behaves like two subgroups of 2x2, with 1&2 being boy-optimal and 3&4 being boy-pessimal.
+the sum is neither boy-optimal nor boy-pessimal
+the mating ritual that we know creates 1 or the other so this used some other procedure
+(c)
+suppose a match has the two boys in the kth pair married to two girls in the kth pair for 1<=k<=n/2.
+a boy in the kth pair will never become a rogue couple with a girl in the j pair where j>k because the girl will have perference of her own partner,
+it will also never happen wen k>j because the boy will have preference of their current partner.
+a rogue couple can not be involved in j=k because exactly one of the two must be happy with their arrangement within the 2x2.
+since each boy can be stably married to either girl in the kth pair and there are n/2 pairs then we have proven the stable matching is
+2^(n/2)
