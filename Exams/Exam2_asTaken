@@ -1,0 +1,77 @@
+Exam 2
+Taken 7/10/2020
+
+Problem 1.
+
+Problem 2.
+
+(a)
+2.
+(b,l) -> (b,0)
+3.
+if b>10-l, (b,l) -> (b-l,10)
+if b<10-l, (b,l) -> (0,b+l)
+
+(b)
+once they are multiples of 5, b,l will be preserved as multiples of 5
+transition 1, preserves this
+transition 2, preserves this
+transition 3, we have b-l which would be a multiple of 5 minus a multiple of 5
+or b+l which would be a multiple of 5 as well
+13 is not a multiple of 5, so we will never arrive therefor
+
+Problem 3.
+
+
+Problem 4.
+
+(a) gcd(m,n,p)
+2^3 * 7^4
+
+(b) lcm()
+2^9 * 3^4 * 5^24 * 7^6042 * 11^211 * 19 ^30
+
+(c)
+
+(d)
+
+(e)
+
+Problem 5
+
+
+Problem 6.
+
+(a)
+phi(2) = 1
+
+(b)
+phi(k) = 2
+k=3
+k=4
+k=6
+
+(c)
+
+we know that every number has a unique prime factorization
+obviously every prime over 2 is odd
+we have a theorem that states that
+phi(p^k) = p^k-p^(k-1), for some prime p
+and we have that if a,b are coprime then
+phi(ab) = phi(a)phi(b)
+
+
+case 1: if our number has more than 1 prime factor term
+suppose we call a the first term of the prime factorization (p^k) of any number
+and b is the rest of the prime factorization
+phi(a) will be
+p^k-p^(k-1)
+which must be and ODD number less an ODD number
+phi(a) must be even, and if phi(a) is even then
+phi of our whole number is even
+
+case 2: if our number only has 1 prime factorization term then it
+must take the form p^k
+and phi(p^k) = p^k-p^(k-1)
+we have already shown to be even.
+thus completes our cases and the proof.
