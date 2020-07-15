@@ -1,0 +1,54 @@
+Problem 1.
+(a)
+g(n) = 3n
+f(n) = n^2
+
+f != O(g)
+
+g = O(f)
+c=3
+
+(b)
+
+f(n) = (3n-7)/(n+4)
+g(n) = 4
+
+f=O(g)
+c=1
+n0 = 0
+g=O(f)
+
+
+(c)
+f = O(g)
+g = O(f)
+
+c=1
+n0=1
+
+
+ Problem 2.
+
+(a)
+asymptotically equal is an Equivalence relation
+
+the little Oh relation is strict partial order
+
+big Oh relation is a weak partial order
+
+Theta realtion is an equivalence realtion
+
+f = O(g) and NOT g = O(f) is a strict partial order
+
+(b)
+
+f = o(g) implies f = O(g)
+f ~ g implies f = Theta(g)
+f ~ g implies f = O(g)
+
+
+Problem 3.
+
+there is a problem with the induction step
+the should not have multiplied through by 2. the LHS is correct but the
+RHS should still be c*1

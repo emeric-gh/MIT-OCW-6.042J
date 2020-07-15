@@ -1,0 +1,59 @@
+Problem Set 9.
+Started 7/14/2020
+
+Problem 1.
+the open form is
+1 + 8 + 27 + ... + n^3
+
+(n(n+1)/2)^2
+
+Problem 2.
+f(n) = ln(n^2 !)
+g(n) = n^2 * ln(n)
+
+ln(n^2 !) = theta (n^2 * ln(n))
+
+stirlings approximation is
+n! ~ rad(2*pi*n) * (n/e) ^ n
+assuming we can compose to form
+(n^2)!
+
+we get
+
+rad(2*pi*n^2) * (n^2/e) ^ (n^2)
+
+f(n) ~ ln [the above]
+
+if we assume n>0
+we have
+skipping some simplification steps we have
+-n^2 + 2n^2 * log(n) + log(n) + 1/2 log(2*pi)
+we can see the dominant term is
+2n^2 * log(n)
+
+therefore
+
+f = O(g) and
+g = O(f)
+
+Problem 3
+
+f(n)=  k=1, to n (sigma notation) k^6
+g(n) = n^7
+f = theta(g)
+
+f(n) <= I + f(1)
+where I is the integral from 1 to n, of f(n)dn
+
+I= 1/7 (n^7 - 1)
++f(1)
+is 1/7(n^7 -1) + 1; well call this f'(n)
+
+the integral bounds also tell us that
+f(n) >= I + f(n)
+which would be 1/7(n^7 -1) + n^6; well call this f''(n)
+
+clearly f''(n) ~ f'(n)
+and
+f = O(g)
+g = O(f)
