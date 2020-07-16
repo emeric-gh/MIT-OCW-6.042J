@@ -1,0 +1,22 @@
+Inclass 3.3
+Started 7/16/2020
+
+Problem 1.
+(a)
+there are 10^9 total numbers
+9^9 numbers without a 1 in any position.
+IE 0,2-9 in each of 9 positions
+10^9 - 9^9 numbers with no 1s
+
+(b)
+we could make a bijection in the following way. choose books left to right
+unchoosen books are labeled 0. the label 1 represents the book that is choosen on the left
+and the adjecent unselectable book on the right. the final selected book is by it self represented with a 1.
+this will biject to 15 strings with exactly 6 ones
+
+Problem 2.
+
+(a)
+the code give us every node except two.
+however by the rules we know that the larger of the two unnammed numbers i connected to the first leaf we attache.
+then we reconstruct the tree taking each number off of the code
