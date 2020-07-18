@@ -18,5 +18,16 @@ Problem 2.
 
 (a)
 the code give us every node except two.
-however by the rules we know that the larger of the two unnammed numbers i connected to the first leaf we attache.
-then we reconstruct the tree taking each number off of the code
+the numbers that do not appear, we know the larger of the two is a leaf attached to the other.
+the tree is then constructed by taking the first number off the code
+ignoring the largest leaf and recursively proceeding through the code.
+
+(b)
+there are as many n-vertex numbered trees as the number of possible codes, n-2.
+IE n^(n-2)
+
+the code for trees is a bijection we can see this by observing that each code only creates 1 tree and
+each tree derives one code.
+
+Problem 3.
+**incomplete**
