@@ -1,0 +1,89 @@
+Exam 3
+
+Problem 1.
+
+(a)
+antichains of max size
+a,b,c
+d,b,c
+
+(b)
+min parallel time is 4
+
+(c)
+with two parallel task it can be complete in 4 tempo
+a,b - d,c - e,f - g,h
+
+Problem 2.
+
+(a)
+our realtion must be transitive, reflexive, symmetric and antisymmetric
+the only relation is the identity relation
+A->A
+
+(b)
+proof that A = A is the only relation that is both WPO and equivalence
+...
+
+
+Problem 3.
+
+(a)
+an example with the nodes u,v,a,b,c
+v -- a -- b -- u
+     |  /
+     c
+two paths are v-a-c-b-u, and v-a-b-u
+there are no cycles with u or v
+
+(b)
+this is very nearly a definition
+if there are two different paths between two nodes then the graph is not a minimum spanning tree,
+which means we can cut a connection to create a MST. this cut would be to eliminate a edge in a cycle
+by definition if a simple graph is not an MST then it has a cycle.
+
+Problem 4.
+
+(a)
+proof by induction
+in our base case we have a 2 node tree with 2 colors
+we can check that there are two different colorings which holds for our
+P(n,m) = n(n-1)^(m-1)
+
+
+assume P(n,m) = n * (n-1)^(m-1)
+for some fixed n
+
+in the P(n,m+1) case
+we have some tree with m nodes. we add a node to some arbitrary leaf on the tree.
+when we do this our equation becomes
+n * (n-1)*(n-1)^(m-1)
+
+in each of the existing permutations the leaf will be colored. our m+1 node can be any color that is not the leaf's color it shares a edge with./
+therfore we add (n-1) different coloring for our m+1 case
+P(n,m) holds
+QED
+
+Problem 5.
+
+(a)
+not preserved
+(b)
+not preserved
+(c)
+not preserved
+(d)
+preserved
+(e)
+not preserved
+(f)
+not preserved
+(g)
+preserved
+
+Problem 6.
+(a)
+a = 1
+
+(b)
+i , iv, v
