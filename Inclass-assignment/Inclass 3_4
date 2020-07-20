@@ -1,0 +1,113 @@
+Inclass 3.4
+Started 7/19/2020
+
+Problem 1.
+
+(a)
+k=3
+4?
+
+(b)
+
+
+
+Problem 2.
+(a)
+we will create a bijection between a binary string and this book problem
+all unselected books are represented by 0s, selected books and the buffer books are 1.
+we want each book selection to be followed by 2 buffer books
+b_select-b_buffer-b_buffer = 1
+the string is build left to right, the last digit doesnt need buffers
+so we have  8 ones and eight zeros in our sting
+so our answer is 16 choose 8 or
+12870
+
+(b)
+k! / (x_1!x_2!...x_m!)
+
+(c)
+the solution will take the form of (b) where the answer to (b)
+we will call f(k,X)
+
+sum from 1 to k of f(k,X)
+
+(d)
+
+Problem 3.
+
+(a)
+4!
+
+(b)
+4!
+
+(c)
+this mapping is done by erasing the subscripts, its pretty trivial
+its also 2:1
+
+(d)
+surjection
+
+(e)
+4! / 2!
+
+(f)
+6!
+
+(g)
+each number represents the arragement of subscripted "E"
+the rest of the letters are "REPEEK"
+123
+132
+213
+231
+321
+312
+
+(h)
+surjection
+6:1
+
+(i)
+6! / 6
+
+(j)
+10!
+
+(k)
+10! / 2!
+
+(l)
+10! / (2! * 2!)
+
+(m)
+10! / (2! * 2! * 3!)
+
+(n)
+10! / (5!*2!*2!)
+
+(o)
+52! / (17!*23!*12!)
+
+Problem 4.
+(a)
+11 choose 5 = 462
+
+(b)
+(17 choose 9) * 2^9 * 3^8
+
+(c)
+we want (a^2)^3 therefore
+5 choose 3
+
+Problem 5
+
+(a)
+9! / 1!*2!*3!*1!*2!
+this would be like a nine digit number with 1 zero, 2 twos, 3 threes, 1 four, and 2 fives
+
+(b)
+there are 6 positions the 9 can take
+once the 9 is set the new sum is 8
+
+(8 choose 6) * 6
