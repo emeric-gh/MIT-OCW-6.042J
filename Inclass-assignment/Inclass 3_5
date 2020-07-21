@@ -26,3 +26,26 @@ the holes can be in each odd number.
 there are n odd number holes, and n+1 birds
 
 Problem 2.
+(a)
+the word "drop" will be in one of seven positions around the remaining 6 letters
+then rest of the letters can be arranged in some string
+7*6!
+
+(b)
+words that contain drop and fails
+these words are 1 part "drop", 1 part "fails", 1 part "e"
+so the answer is 3!
+or 6
+
+(c)
+10! / ((7*6! * 6*5! * 5*4!) * 3! * 2!)
+
+
+Problem 3.
+
+(a)
+number of paths
+100! / (50!)^2
+
+100 choose 50 - (21 choose 10 * 79 choose 40) - 41 choose 21 * 59 choose 29
++ 21 choose 10 * 20 choose 11 * 59 choose 29
