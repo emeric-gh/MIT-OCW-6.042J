@@ -1,0 +1,30 @@
+Problem Set/ Assignment 10
+Started 7/21/2020
+
+Problem 1
+(a)
+Our set of rolls will be A = B * C
+where
+B is permutations of {1,...,5}
+C is a set of colors of two dice with the value 6
+
+|A| = 7 choose 2 * 5!
+
+(b)
+similar to above except
+now A = B * C * D
+where D is the different values of the matching dice
+all other sets are the same
+
+|A| = (7 choose 2) * 5! * 6
+
+(c)
+in this case we have
+E = F * G * H * I
+were the first three elements
+choose two elemments
+and there are 4 ways to choose the three dice since there value must differ from the 2
+
+(7 choose 2) * (6 choose 2) * (5 choose 2) * 4
+
+Problem 2
