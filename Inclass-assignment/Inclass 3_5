@@ -1,0 +1,28 @@
+inclass 3.5
+
+Problem 1.
+
+(a)
+ids are pigeons, sums are holes
+8 places 9 different digits
+8*9 = 72 different sums
+there are more birds than holes
+
+(b)
+we can describe each number as k*37 + a
+a is on the interval 0-36
+this could also be stated as k1 congruent k2 (rem 37)
+so there are 37 holes and 100 pigeons
+implies atleast two birds one hole
+
+(c)
+if we divide the unit square into 4 equal square quarters we can place each point in corner of the squares
+then we see that the 5th point will be atleast 1/rad(2) away from one of the existing points because that is the
+corner to corner distance of our subsquare.
+in this way we have 5 birds and 4 holes
+
+(d)
+the holes can be in each odd number.
+there are n odd number holes, and n+1 birds
+
+Problem 2.
