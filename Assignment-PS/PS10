@@ -67,3 +67,37 @@ with binomial coef.
 ( 9 )  = ( n )
 
 Problem 3.
+
+(a)
+we would like to show that
+(x1 + x2 + ... + xn)^p is congruent to x1^p + x2^p +...+ xn^p  (mod p)
+
+the LHS, using Theorem 14.6.5 is
+SigmaNotation( multinomial coefficient( p; k1,k2...,kn))*x1^k1*x2^k2*...*xn^kn
+
+if we look at the multinomial coefficients we can see that this term will be divisible by p
+if all of the ki terms are less than p
+it will take the form of
+p!/(k1*...*kn)
+the factorial of p provides of factor of p that is not removed in this case
+
+so all these terms on the loop (mod p) will be zero
+
+the multinomial coefficients where some ki = p we will have the coeficient of 1
+which is every thing that is left over on the RHS
+x1^p = x1^k1, x2^p = x2^k2, ... ,xn^p = xn^kn
+thus the two sides are congruent on mod p, QED
+
+(b)
+this means that
+say we have the multinomial
+(1+1+1...+1)^p = n^p
+we know from (a)
+that
+our LHS will be 1^p +1^p ...+1^p + [the part thats all divisible by p]
+1^p +1^p ...+1^p = n
+so n^p = n + [some number divisible by p]
+n^p - n = n(n^(p-1) -1) are divisible by p
+n^(p-1) - 1 is divisible by p if n is not divisible by p
+QED
+ 
