@@ -28,3 +28,42 @@ and there are 4 ways to choose the three dice since there value must differ from
 (7 choose 2) * (6 choose 2) * (5 choose 2) * 4
 
 Problem 2
+(a)
+first we can make permutations of all 21 consonents.
+then we have 21 positions to the left of each consonants.
+and 5 vowels to place.
+so
+21!*(21 P 5)
+
+(b)
+we can arrange our vowels and consonants into strings,
+then we need to combine them to take the form
+vcc...vcc...vcc..vcc..vcc
+we then have to partition our remainging consonants into the gaps
+so we have
+5! * 21! * (p(11) - p(4))
+
+(c)
+we could arrange our student in a line and match
+student k with student k+1
+we then have to concider when two lines have the same pairings
+such as ABCD... CDBA...
+we need to remove the 2^n ways in which pairs can be swapped
+and the n! ways in which pairs can be reordered
+so there are
+(2n!) / (2^n*n!)
+
+
+(d)
+we would like to represent our digits as
+k element of {0,1,...,9},
+and x_k is the number of copies of the kth digit of our n-digit type
+so we have
+x_0 + x_1 +...+ x_9 = n
+
+we can solve this using the stars and bars theorem
+with binomial coef.
+(n+9)  = (n+9)
+( 9 )  = ( n )
+
+Problem 3.
