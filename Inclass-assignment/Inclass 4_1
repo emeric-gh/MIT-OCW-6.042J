@@ -48,3 +48,70 @@ there are 3 branches of interest so
 ans = 3/8
 
 Problem 2.
+
+(a)
+the system could fail at probability p if all parts fail together.
+so
+Pr{f1,...,fn} = p ; Pr{empty} = 1-p
+
+our sample space would be
+Pr{Fi} = 0+0+0 + Pr{f1,...,fn} = p
+
+(b)
+this would be the opposite case
+each part would only fail alone
+Pr{Fi} = p for each i
+Pr{empty} = 1 - np
+
+because Pr{Fi} = p
+we have Pr{F} = np
+
+(c)
+
+F = Union i is 1 to n of Fi
+its given that Pr{f1} =p
+this is less than
+Pr{U Fi} by monotonicity
+which is less than
+Sigma from i=1 to n of Pr{Fi} by boole's inequality
+which is equal to np
+
+Problem 3.
+
+the branches of our samples space can be mapped as
+each line is a branch
+
+H (p) -> H (p) >> first two layers of tree regresses as the game starts over (p^2)
+
+H (p) -> T (1-p) >> win p(1-p)
+
+T (1-p) -> H (p) >> loss (1-p)p
+
+T (1-p) -> T (1-p) >> first two layers of tree regresses as the game starts over (1-p)^2
+
+the liekly hood of winning is
+s = p(1-p) + s*p^2 + s*(1-p)^2
+
+the solution to this kinda has to be 1/2 for all p
+we know this because its a fair game by description
+
+by symmetry the chance of losing is 1/2 which completes the sample space.
+
+Problem 4.
+
+this proof will be similar to what we showed in problem 2
+
+if An is pairwise disjoint events then we can use the Sum Rule (Rule 16.5.3) from the text
+
+then we would have
+Pr[U An] = SigmaNotation of Pr[An]
+
+if any of the events coincide by nature then we can show that LHS < RHS
+for example if we showed like in problem 2 part (c) that all of A happens togeather
+then we would have
+
+Pr[U An] < SigmaNotation of Pr[An]
+
+therefore
+the union bound holds
+QED
