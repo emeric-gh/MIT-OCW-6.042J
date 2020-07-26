@@ -1,0 +1,50 @@
+Inclass 4.1
+Started 7/25/2020
+
+Problem 1.
+(a)
+Step 1
+sample space
+car location will be
+{1,2,3,4}
+players guess will branch off of each element of the above
+{1,2,3,4}
+door revealed will be the next layer
+on the selected door it will be 1 of the 3 wrong
+if the wrong door was first selected it will be 2 of the remaining wrong doors
+
+{1,2,3,4}---> ->{1,2,3,4} (1) -->{3,4}
+                          (2) -->{1,3,4}
+    in this example we have shown one tree with two branches
+    the prize is behind door 1 , in the top the correct was initially selected
+    in the bottom the wrong was initially selected. the rest of the tree iterates the same way.
+
+(a)
+in the simple tree of the sticking strategy
+we have 1 win branch ,
+and 3 loss branches
+
+(step2)
+we are interested in when the winning branch is selected
+
+step 3 and 4
+there is a 1/4 that the correct door is selected off the Start
+for this strategy nothing else matters afterwards
+ans = 1/4
+
+(b)
+We can simplify our tree to
+4 branches,
+branch 1 the correct door is a loss in the flipping strat.
+branch 2-4, wrong initial guesses are shown 1 wrong, and then switch to either 1 wrong or 1 correct
+
+(step2 )
+we are interested in branches 2-4 that switch to the correct leaf
+(step3)
+each leaf is (1/2)(1/4)
+(step 4)
+there are 3 branches of interest so
+3(1/2)(1/4) = 3/8
+ans = 3/8
+
+Problem 2.
