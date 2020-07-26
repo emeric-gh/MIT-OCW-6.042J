@@ -89,7 +89,7 @@ T (1-p) -> H (p) >> loss (1-p)p
 
 T (1-p) -> T (1-p) >> first two layers of tree regresses as the game starts over (1-p)^2
 
-the liekly hood of winning is
+the likely hood of winning is
 s = p(1-p) + s*p^2 + s*(1-p)^2
 
 the solution to this kinda has to be 1/2 for all p
@@ -107,7 +107,7 @@ then we would have
 Pr[U An] = SigmaNotation of Pr[An]
 
 if any of the events coincide by nature then we can show that LHS < RHS
-for example if we showed like in problem 2 part (c) that all of A happens togeather
+for example if we showed like in problem 2 part (c) that all of A happens together
 then we would have
 
 Pr[U An] < SigmaNotation of Pr[An]
