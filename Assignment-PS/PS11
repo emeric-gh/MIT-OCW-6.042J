@@ -1,0 +1,38 @@
+Assignment 11
+
+Problem 1.
+
+(a)
+each row could be colored in
+3^4 different ways, which is 81
+since their are 81 holes and 82 pigeons
+the pigeonhole priciple tells us that two rows must have the same pattern
+
+(b)
+
+from (a) we know two rows have the same color pattern
+we also know that each row has 4 col. and there are only 3 colors
+so each row must repeat atleast 1 color, including our two identical rows
+therefor we can make a rectangle with same color corners by using our rows from (a)
+and the repeat color in the two rows
+
+(c)
+
+the two locations of the repeat color in each row has
+4 choose 2 possiblilities and 3 different colors
+this totals 18 , so with 19 rows we know there would be
+two rows with repeat colors in the same positions
+which would make a rectangle
+
+Problem 2.
+
+proof by induction that in a game of n shuffled cards with b qty black cards
+and r qty red cards skipping a card strategy is the same as taking the first card strategy
+
+in our base case we have n =2 cards
+taking the first card is the same as skipping the card as we are forced to take the next card
+so in our shuffled deck we either get 1 card or the other. we have a 50% chance of getting either card with both strategies
+in a shuffled deck
+
+in our induction step we have an n sized deck that has some number b such that n - b = r;
+n is >2 and b and r are positive ints
