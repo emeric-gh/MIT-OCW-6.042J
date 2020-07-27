@@ -98,7 +98,7 @@ p = 1
 
 if there are d distinct cards then
 1/d cards in the Ah
-this is our probablity space
+this is our probability space
 if we draw h cards per hand then
 pr[we have Ah in hand] = h* 1/d
 
