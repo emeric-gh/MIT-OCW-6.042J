@@ -6,20 +6,20 @@ Problem 1.
 each row could be colored in
 3^4 different ways, which is 81
 since their are 81 holes and 82 pigeons
-the pigeonhole priciple tells us that two rows must have the same pattern
+the pigeonhole principle tells us that two rows must have the same pattern
 
 (b)
 
 from (a) we know two rows have the same color pattern
 we also know that each row has 4 col. and there are only 3 colors
-so each row must repeat atleast 1 color, including our two identical rows
+so each row must repeat at least 1 color, including our two identical rows
 therefor we can make a rectangle with same color corners by using our rows from (a)
 and the repeat color in the two rows
 
 (c)
 
 the two locations of the repeat color in each row has
-4 choose 2 possiblilities and 3 different colors
+4 choose 2 possibilities and 3 different colors
 this totals 18 , so with 19 rows we know there would be
 two rows with repeat colors in the same positions
 which would make a rectangle
@@ -34,5 +34,72 @@ taking the first card is the same as skipping the card as we are forced to take 
 so in our shuffled deck we either get 1 card or the other. we have a 50% chance of getting either card with both strategies
 in a shuffled deck
 
-in our induction step we have an n sized deck that has some number b such that n - b = r;
+in our induction step:
+we have an n sized deck that has some number b such that n - b = r;
 n is >2 and b and r are positive ints
+
+we have two cases for winning
+we have a
+b/n chance of skipping a black card
+
+and a 1-b/n chance of skipping a red card
+
+which means for the next round the likely hood of winning will be
+
+(b/n)((b-1)/(n-1))  +  1-b/n  *  b/(n-1)
+
+which reduces to
+b/(n-1) - b^2 / (n^2 - n)  +  b^2 - b / (n^2 - n)
+and middle term cancels
+b/(n-1) + -b/(n^2 - n)
+which with common factors reduces to
+b/n,
+proving that the odds don't change with the skipping strategy
+QED
+
+Problem 3.
+
+(a)
+1.
+our probablity space is
+AhJ
+AsJ
+AhAs
+p=1 our hand has an A in it
+
+2.
+each even it 1/3
+so 2/3 Ah is in your hand
+
+3.
+revealed card just collapses the hand phase of this game
+its the same as 3 choose 1
+1/3 revealed card is Ah
+
+4.
+2/3
+revealed card in an A
+
+(b)
+
+1.
+this is tautologically the same
+
+2.
+this becomes p =1
+
+3.
+p = 1/2
+
+4.
+p = 1
+
+(c)
+
+if there are d distinct cards then
+1/d cards in the Ah
+this is our probablity space
+if we draw h cards per hand then
+pr[we have Ah in hand] = h* 1/d
+
+(d)
