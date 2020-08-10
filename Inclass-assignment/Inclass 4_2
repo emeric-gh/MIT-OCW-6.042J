@@ -1,0 +1,56 @@
+Inclass 4.2
+Started 8/5/2020
+
+Problem 1.
+a)
+
+Pr[B] = 1/1000
+
+Pr[Y|B] = 1/100
+
+Pr[Ybar|Bbar] =
+
+b)
+incomplete
+
+c)
+incomplete
+
+d)
+incomplete
+
+e)
+incomplete
+
+problem 2.
+
+well call each villian:
+S for sauron, F for foo-foo, and V for Voldermort
+Release selections are, -> then the declaration
+VS -> V  this is probability 2/6
+VB -> V " " 1/6
+  or ->B   1/6
+SB -> B  2/6
+
+the mistake he was likely that when V and B are released the odds of declaring B
+are no the same as when S and B are being released. there are half probability that V or B will be anounced
+so there is still 2/6 that S will be released.
+
+Problem 3.
+the space is
+
+. ->52 card deck -> 51 other cards
+                  -> 8h
+. ->51 card deck ->50 other cards
+                  -> 8h
+
+our probability space is
+1/2 for each deck then
+1/51 for the smaller deck and
+1/52 for the larger deck
+
+Pr[52deck|8h] =
+
+Pr[52 intersect 8h] / Pr[8h] = (1/52*1/2 ) / (1/2 * 1/52 + 1/2 1/51)
+
+our answer is 51/103
