@@ -1,0 +1,36 @@
+Inclass 4.3
+Started 8/7/2020
+
+Problem 1.
+
+a)
+edge probabilities top to bottom are:
+4/12
+8/12
+7/12
+5/12
+11/12
+1/2
+
+
+
+b)
+note that happy is 16/144, 35/144, 33/144
+the sum of happiness as a fraction
+84/144
+
+c)
+Pr[Yale | Happy] =
+
+16/144 / 84/144 = 4/21
+
+d)
+Yale is independet of happy IFF
+Pr[Yale|Happy] =? Pr Yale
+
+from (c) we know this isnt true
+
+4/21 =/= 4/12
+
+e)
+similar to d
