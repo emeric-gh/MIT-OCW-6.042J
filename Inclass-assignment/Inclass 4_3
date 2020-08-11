@@ -25,8 +25,8 @@ Pr[Yale | Happy] =
 16/144 / 84/144 = 4/21
 
 d)
-Yale is independet of happy IFF
-Pr[Yale|Happy] =? Pr Yale
+Yale is independent of happy IFF
+Pr [Yale|Happy] =? Pr [Yale]
 
 from (c) we know this isnt true
 
@@ -34,3 +34,39 @@ from (c) we know this isnt true
 
 e)
 similar to d
+...
+incomplete
+
+Problem 2.
+
+(a)
+see figure
+
+we sortof already know that A,B,C are all independent and have probability
+of 1/2
+A will have directly 1/2
+B will have 2/4 and c will have 4/8 of the probability space
+
+the leafs of our tree our each probability 1/8
+so we have
+ABD
+ACD
+BCD
+D
+four branches, totalling 1/2 probability for D
+
+(b)
+if these events were mutually independent then
+Pr{A ∩ B ∩ C ∩ D} = Pr[A]*Pr[B]*Pr[C]*Pr[D]
+the right hand side is 1/16 so we know that this isnt true
+
+(c)
+the two unique cases are
+Pr{A ∩ B ∩ C} = Pr[A]*Pr[B]*Pr[C]
+this is 1/8th
+Pr{A ∩ B ∩ D} = Pr[A]*Pr[B]*Pr[D]
+also 1/8th, and similar to the 2 other cases
+
+Problem 3.
+
+(a)
