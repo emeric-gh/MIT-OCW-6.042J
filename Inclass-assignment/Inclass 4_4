@@ -1,0 +1,19 @@
+Inclass 4.4
+Started 8/12/2020
+
+Problem 1.
+
+The team one strategy will be to choose randomly a number from 0-6
+and then the second number will be 1 more than the first.
+
+in this way if any number besides 0 is revieled first then the unrevealed number
+is either one greater or one less.
+only when they select the card with zero will they know which is greater.
+zero has to be included however because when 1 is revealed from a first flip,
+team 1 needs there to be a possiblitly that there is a lower or higher number.
+so for 6/7 of the number from 0-6 there is a 1/2 chance that team 2 picks the correct outcome.
+
+meaning that team 1 can maintain their
+(6/7) * (1/2) winrate.
+
+Problem 2.
