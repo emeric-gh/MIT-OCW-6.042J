@@ -14,6 +14,27 @@ team 1 needs there to be a possiblitly that there is a lower or higher number.
 so for 6/7 of the number from 0-6 there is a 1/2 chance that team 2 picks the correct outcome.
 
 meaning that team 1 can maintain their
-(6/7) * (1/2) winrate.
+(6/7) * (1/2) win rate.
 
 Problem 2.
+
+two variables are independent if
+Pr(A n B) = Pr(A)Pr(B)
+
+from our hint
+A1 = A and A0 = Abar,
+so I_A = c is the same as Ac for c element of {0,1}
+likewise for B
+from this
+if A and B are independent
+then
+we know that
+Abar and Bbar , aswell as A and Bbar, B and Abar
+and from our definition we can see that the indicators
+are independent if A and B are independent
+from our definition we also
+know that either A1 = B1 or A0 = B1,
+there for A and B must be independent.
+QED
+
+Problem 3.
