@@ -1,0 +1,45 @@
+Inclass 4.6
+Started 8/17/2020
+
+Problem 1.
+
+(a)
+T is the temp of a random cow
+Pr[T>90] =< E[T]/90 = 85/90
+
+for markovs bound T-70
+
+= Pr [T-70 >=20] <= E[T-70]/20 = (85 -70) / 20 = 3/4
+
+(b)
+100 cow have a temp of 70
+300 cows have a temp of 90 degrees
+this makes the mean temp 85 and the survival 3/4
+
+(c)
+
+
+Problem 2.
+(a)
+expected number would be
+120(1/6)+60(1/2)+20(1/5)
+=54
+
+(b)
+the markov bound would be
+Pr[R>108] = 54/108
+
+or 1/2
+
+(c)
+individual variance is p(1-p)
+so
+120(1/6)(5/6) + 120(1/6)+60(1/2)(1/2)+20(1/5)(4/5)
+=523/15
+
+(d)
+Pr[R-54>54] < Var[R] / 54^2
+
+= 523/ (15(54^2))
+
+Problem 3.
