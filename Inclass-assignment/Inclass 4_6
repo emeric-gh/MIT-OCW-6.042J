@@ -43,3 +43,11 @@ Pr[R-54>54] < Var[R] / 54^2
 = 523/ (15(54^2))
 
 Problem 3.
+(a)
+expected 1 person gets their hat back
+
+(b)
+
+E[X_i* X_j] = 1/(n (n-1))
+
+(c)
