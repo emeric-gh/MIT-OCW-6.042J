@@ -1,0 +1,17 @@
+Problem Set 12
+9/1/2020
+
+Problem 1.
+
+Problem 2.
+(a)
+gp will test positive and g(1-p) will test negative, therefore
+
+gp(k+1) + g(p-1) is the total number of tests
+
+E[tests] = n/k * (1+k-k(1-p)^k)
+
+(b)
+
+
+Problem 3.
