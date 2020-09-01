@@ -51,3 +51,5 @@ expected 1 person gets their hat back
 E[X_i* X_j] = 1/(n (n-1))
 
 (c)
+the indicators X_i are not independent. if one person gets the correct hat back the
+probability of the next person getting the correct hat goes up.
